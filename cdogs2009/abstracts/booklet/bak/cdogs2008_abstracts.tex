@@ -1,0 +1,568 @@
+\ifx\pdfoutput\undefined  % not running pdflatex
+ \documentclass[10pt]{article}
+\else
+ \documentclass[10pt,pdftex]{article}
+\fi 
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyheadings}
+ \pagestyle{fancyplain}
+\setlength{\headrulewidth}{0.3 pt} \setlength{\footrulewidth}{0.3
+pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS 2008}
+\chead{} \rhead{\textbf Friday, March 14, 2008} \lfoot{}
+\cfoot{Department of Oceanography, Dalhousie University}
+\rfoot{\thepage}
+
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+\paperwidth = 8 in \oddsidemargin  = 0.75 in \evensidemargin =
+0.75 in \textwidth = 6.0 in \textheight = 9 in \hoffset = -.5in
+\voffset = -1.0in
+
+\newcommand{\abTitle}[1]{\begin{center}\fontsize{12pt}{16pt}\textbf{#1}\end{center}}%
+%\newcommand{\abSpeaker}[2]{^{\mbox{#2}}\mbox{\underline{#1}}}%
+%\newcommand{\abSpeaker}[2]{\mbox{\underline{#1}}^{\mbox{#2}}}%
+\newcommand{\abSpeaker}[2]{{\underline{#1}}$^{\mbox{#2}}$}%
+
+%\newcommand{\abCoauthorO}[2]{\mbox{, }^{\mbox{#2}}\mbox{#1}}%
+%\newcommand{\abCoauthorO}[2]{\mbox{, }\mbox{#1}^{\mbox{#2}}}%
+\newcommand{\abCoauthorO}[2]{, #1$^{\mbox{#2}}$}%
+\newcommand{\abCoauthorI}[2]{\mbox{, }\mbox{#1}^{\mbox{#2}}\mbox{,}}%
+\newcommand{\abCoauthorN}[2]{^{\mbox{#2}}\mbox{#1}}%
+\newcommand{\abCoauthorT}[4]{\textrm{\mbox{, }^{#4}\mbox{#1}\mbox{, }^{#4}\mbox{#3}}}%
+\newcommand{\abCoauthorTh}[6]{\textrm{\mbox{, }^{#2}\mbox{#1}\mbox{, }^{#4}\mbox{#3}\mbox{, }^{#6}\mbox{#5}}}%
+\newcommand{\abCoauthorF}[8]{\textrm{\mbox{, }^{#2}\mbox{#1}\mbox{, }^{#4}\mbox{#3}\mbox{, }^{#6}\mbox{#5}\mbox{, }^{#8}\mbox{#7}}}%
+
+\newcommand{\abAffilO}[2]{^{\mbox{#2}}\mbox{\parbox[t]{0.9\linewidth}{\centering #1}}}%
+\newcommand{\abAffilT}[4]{^{#2}\mbox{#1}^{#4}\mbox{#3}}%
+\newcommand{\abAffilTh}[6]{^{#2}\mbox{#1}\vspace{1 mm}^{#4}\mbox{#3}^{#6}\mbox{#5}}%
+\newcommand{\abAffilF}[8]{^{#2}\mbox{#1}^{#4}\mbox{#3}^{#6}\mbox{#5}^{#8}\mbox{#7}}%
+
+\newcommand{\abEmail}[1]{\textsl{Speaker may be reached at }\texttt{#1}}
+
+\newcommand{\sched}[4]{\contentsline{section}{\numberline{} \rm \textsl{#1} \\
+#2\hspace{3 mm}(#3)}{#4}}%
+
+%-----------------------------------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+\begin{figure}
+\centerline{\includegraphics[width=7 cm]{cdogs_logo.jpg}}
+\end{figure}
+
+\begin{center}\vspace{3 mm}{\Huge\textbf{ C-DOGS 2008}}
+
+\vspace{2 mm}{\large\textsl{Conference of Dalhousie Oceanography
+Graduate Students}}
+
+\rule{0.4\linewidth}{0.5pt}
+
+\vspace{3 mm}{\large Friday March 14, 2008}
+
+\vspace{1 mm}{\large 9\textit{am} - 5\textit{pm}, University Hall}
+
+\vspace{1 mm}{\large Dalhousie University, Halifax, Nova Scotia}
+
+\vspace{5 mm}
+
+\rule{\linewidth}{2pt}
+\end{center}
+
+\vspace{1 mm}
+\begin{center}\large{\textbf{Contents}}\end{center}
+
+\begin{flushright}Page\end{flushright}
+
+\sched{}{Coffee}{8:30 \emph{am}}{}
+\sched{}{Welcoming Remarks}{9:00 \emph{am}}{}
+\sched{Darlene Brownell}{\sl Prochlorococcus marinus \rm as a source of Marine Methyl Iodide (CH$_3$I)}{9:15 \emph{am}}{4}
+\sched{Trajce Alcinov}{Long Wavelength Ripples in the Nearshore}{9:30 \emph{am}}{4}
+\sched{Jann Paul Mattern}{Application of two Statistical Data Assimilation Procedures to a 1D Biological Model of the BATS Site}{9:45 \emph{am}}{5}
+\sched{Yuehua Lin}{Transport variability through the Yucatan Channel: the influence of the Florida Current and flow compensation around Cuba}{10:00 \emph{am}}{5}
+\sched{Jennifer Mecking}{The barotropic ocean response to fast moving tropical cyclones affecting Atlantic Canada}{10:15 \emph{am}}{6}
+\sched{}{Break}{10:30 \emph{am}}{}
+\sched{Lee Titus}{Improving statistical downscaling of general circulation models}{10:45 \emph{am}}{7}
+\sched{Angelia S.M. Vanderlaan}{Reducing the risk of lethal encounters: vessels and right whales in the Bay of Fundy and on the Scotian Shelf}{11:00 \emph{am}}{8}
+\sched{Xiaomei Ji}{Potential Artificial Beach Design for Baipai Artificial Island, Sanya Bay, Hainan}{11:15 \emph{am}}{9}
+\sched{Mark A. Barry}{Bubbling from below: a look at pockmark formation}{11:30 \emph{am}}{10}
+\sched{Matthew Corkum}{High Resolution Wind Forecasting along the Coast of Nova Scotia}{11:45 \emph{am}}{11}
+\sched{}{Lunch}{12:00 \emph{pm}}{}
+\sched{Bo Yang}{Development of a Five-Level Nested-Grid Coastal Circulation Prediction System for the Inner Scotian Shelf}{1:00 \emph{pm}}{12}
+\sched{Shana Watanabe}{Patterns in abundance and size of two deep-water gorgonian coral species, in relation to depth and substrate features, along the continental slope at Northeast Channel, Nova Scotia }{1:15 \emph{pm}}{13}
+\sched{Simon Higginson}{``De-eddying'' ocean data}{1:30 \emph{pm}}{13}
+\sched{Chris L'Esperance}{Non-isovolumetric Measurement of Young's Modulus and Poisson's Ratio of Marine Sediments}{1:45 \emph{pm}}{14}
+\sched{Stephanie Moore}{On the Angular Dependence of Acoustic Scattering from Sand in Suspension}{2:00 \emph{pm}}{14}
+\sched{}{Break}{14:15 \emph{pm}}{}
+\sched{Eric C. J. Oliver}{Extratropical Expressions of the Madden-Julian Oscillation}{2:25 \emph{pm}}{15}
+\sched{Kimberley Davies}{Feeding ecology of North Atlantic Right Whales:  the role of zooplankton in controlling the spatiotemporal distribution of a predator across four orders of magnitude in size}{2:40 \emph{pm}}{16}
+\sched{Doris Leong}{Sounds like turbulence}{2:55 \emph{pm}}{16}
+\sched{Adam J. Comeau}{New method to estimate a parameter of phytoplankton physiology related to primary productivity models}{3:10 \emph{pm}}{16}
+\sched{Irene Maier}{Linear Transition Ripples: Crest Alignment and Ripple Migration}{3:25 \emph{pm}}{17}
+\sched{}{Break}{15:40 \emph{pm}}{}
+\sched{Jennifer E. Kelly}{Isolated Population Dynamics as a  Potential Consequence of Low Abundances for Atlantic Cod}{3:50 \emph{pm}}{18}
+\sched{Marie-Noel R. Matthews}{Estimating Geoacoustic Parameters of Gassy Sediment using Low-Frequency Sound in St. Margaret's Bay, Nova Scotia.}{4:05 \emph{pm}}{19}
+\sched{Megan Saunders}{Kelp bed defoliation by an introduced bryozoan in St Margarets Bay.}{4:20 \emph{pm}}{19}
+\sched{Erin Breen}{Population biology of the invasive European green crab, \sl Carcinus maenas\rm, and two native decapods in a brackish micro-tidal system in Nova Scotia, Canada.}{4:35 \emph{pm}}{20}
+\sched{Clark Richards}{Some questions about nonlinear internal wave groups}{4:50 \emph{pm}}{20}
+\sched{}{Closing remarks and retire to 5$^{th}$ floor lounge.}{5:05 \emph{pm}}{}
+
+
+\newpage
+%-----------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------------
+% END OF TOP TEMPLATE
+%-----------------------------------------------------------------------------------
+
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{\sl Prochlorococcus marinus \rm as a source of Marine Methyl Iodide (CH$_3$I)} \vspace{2 mm} \begin{center}
+  \abSpeaker{Darlene~Brownell}{1}\abCoauthorO{Robert Moore}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{d.brownell@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent The ocean is the dominant source of atmospheric methyl iodide (CH$_3$I).  Atmospheric CH$_3$I plays a role in O$_3$ destruction and leads to new particle formation in the marine boundary layer.  Marine CH$_3$I production mechanisms are poorly understood.  A previous study suggests \sl Prochlorococcus marinus \rm is a globally significant biological producer of marine CH$_3$I.  The objective of this study was to replicate laboratory experiments and further explore the significance of \sl P. marinus \rm as a global producer of marine CH$_3$I.  Laboratory experiments were designed to measure CH$_3$I production from P. marinus cultures.  CH$_3$I production was quantified through purge and trap methods in combination with gas chromatography mass spectrometry (GC-MS).  A production rate of CH$_3$I from \sl P. marinus \rm cultures was calculated as 1.5 x 10$^{-11}$ pmol CH$_3$I cell$^{-1}$ d$^{-1}$.  This result is in contrast to a published study that observed a production rate of 5.1 x 10$^{-8}$ pmol CH$_3$I cell$^{-1}$ d$^{-1}$.  \sl P. marinus \rm is calculated to produce 0.5 nmol CH$_3$I m$^{-2}$ d$^{-1}$ in the ocean between 40ºN - 40ºS, which contributes 3\% of the CH$_3$I flux to the atmosphere in the Pacific ocean.  It is concluded that \sl P. marinus \rm is not a globally significant producer of marine CH$_3$I.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Long Wavelength Ripples in the Nearshore} \vspace{2 mm} \begin{center}
+  \abSpeaker{Trajce~Alcinov}{1}\abCoauthorO{Alex Hay}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{t.alcinov@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Sediment bedforms are ubiquitous in the nearshore environment, and their characteristics and evolution have a direct effect on the hydrodynamics and the rate of sediment transport. This study focuses on long wavelength ripples (LWR) observed at two locations in the nearshore at $\sim$3m water depth under combined current and wave conditions. The ripples have an average wavelength of $\sim$40cm and linear transition ripples superimposed in some cases. They occur in the build up and decay of storms and are generally preceded by irregular or cross ripples. An important goal of the study is to test the gross bedform-normal transport (GBNT) hypothesis, which states that the orientation of ripples in directionally varying flows is such that the gross sediment transport normal to the ripple crest is maximized. Ripple wavelengths and orientation are measured from rotary fanbeam images, and current and wave conditions are obtained from electromagnetic (EM) flowmeter data and an offshore pressure gauge array records. Preliminary results suggest that LWR do not conform to the GBNT hypothesis, and they exhibit a fairly consistent offset of $\sim$45 degrees from the expected direction. Possible causes for this offset and planned future work are discussed. 
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Application of two Statistical Data Assimilation Procedures to a 1D Biological Model of the BATS Site} \vspace{2 mm} \begin{center}
+  \abSpeaker{Jann~Paul~Mattern}{1}\abCoauthorO{Michael Dowd}{2}\abCoauthorO{Katja Fennel}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  
+  $\abAffilO{Department of Mathematics and Statistics, Dalhousie University}{2}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{paul.mattern@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Modern statistical data assimilation techniques are tools to improve the accuracy of numerical ecosystem models in particular and ocean models in general by confronting them with data. We present an application of the Ensemble Kalman Filter (EnKF) and the Sequential Importance Resampling (SIR) to a depth-resolved biological model of the upper ocean at the Bermuda Atlantic Time Series Study (BATS) site. The biological model is nitrogen-based, and simulates phytoplankton, detritus, and dissolved inorganic nitrogen. Chlorophyll with photoacclimation and oxygen with gas exchange at the ocean surface are also modelled. The physical setting is provided by the General Ocean Turbulence Model (GOTM) which includes a k-epsilon mixing scheme and atmospheric forcing. The EnKF approach is illustrated by quantifying the improvement of the model fit to observations over a model without data assimilation.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Transport variability through the Yucatan Channel: the influence of the Florida Current and flow compensation around Cuba} \vspace{2 mm} \begin{center}
+  \abSpeaker{Yuehua~Lin}{1}\abCoauthorO{Jinyu Sheng}{1}\abCoauthorO{Richard J. Greatbatch}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{Yuehua.Lin@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Water enters and leaves the Gulf of Mexico via the Yucatan Channel and the part of the Florida Current that flows between Cuba and Florida. Both observation and model results suggest that the transport through the Yucatan Channel on time scales of a month and longer is influenced by both the upstream Florida Current and the intrusion of the Loop Current into the Gulf of Mexico in association with ring shedding. Model studies show that the transport variability associated with intrusion of the Loop Current is compensated by flow passing through the Windward Passage (enhanced transport through the Yucatan Channel) and between Cuba and the Bahamas (reduced transport through the Yucatan Channel) with relatively little affect on the variability of the Florida Current transport, a view that is consistent with the available observational data. Numerical experiments also show that the compensation effect results from the interaction between the density anomalies associated with Loop Current intrusion and the variable bottom topography. 
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{The barotropic ocean response to fast moving tropical cyclones affecting Atlantic Canada} \vspace{2 mm} \begin{center}
+  \abSpeaker{Jennifer~Mecking}{1}\abCoauthorO{Richard Greatbatch}{1}\abCoauthorO{Chris Fogarty}{2}\abCoauthorO{Jinyu Sheng}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  
+  $\abAffilO{Canadian Hurricane Centre, MSC}{2}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{meckingj@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Atlantic Canadian coastal waters are occasionally affected by tropical cyclones (TC) which can have devastating effects in the form of a storm surge and/or meteorological tsunami.  The current operational storm surge model run at the Meteorological Service of Canada (MSC) has reasonable skill in forecasting the storm surge induced by storms with translational speeds much less than the shallow water wave speed.  In cases that the translational speeds of the storms are near or greater than the shallow water wave speed, the non-isostatic response of the sea level becomes important and the performance of the storm surge model is hindered.  Previous work on the ocean response to TC affecting Atlantic Canada used idealized atmospheric pressure and wind forcing to represent the tropical cyclone.  In this study we examined the dynamic response of the eastern Canadian seaboard to the Hurricane Juan (2003) and Tropical Storm Helene (2000) using a shallow water equation model forced by atmospheric pressure and surface winds based on the Mesoscale Compressible Community (MC2) model.  Preliminary model results demonstrate that atmospheric pressure forcing plays a dominant role in driving the sea level elevation in Helene while in the combination of wind and pressure forcing is responsible for the sea level elevation in Juan.  Model sensitivity studies show that having a small time-step (on the order of minutes) in the atmospheric forcing is needed to obtaining a realistic sea level response produced by the ocean model during the two storms.  Our studies also indicate that the horizontal model resolution should be fine enough to resolve the structure of the storm's sea level response.  Reasonable representation of the storm structure in the model is also important for forecasting the maximum sea level elevation due to the storm.
+\end{minipage}\end{minipage}
+
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Improving statistical downscaling of general circulation models} \vspace{2 mm} \begin{center}
+  \abSpeaker{Lee~Titus}{1,2}\abCoauthorO{Richard Greatbatch}{3,2}\abCoauthorO{Jinyu Sheng}{3}\abCoauthorO{Ian Folkins}{2}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Environment Canada}{1}$
+
+  
+  $\abAffilO{Department of Atmospheric Science}{2}$
+
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{3}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{Lee.Titus@ec.gc.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Improving regional climate change projections of temperature for Halifax, Nova Scotia by statistically downscaling the CGCM3 via principal components.In order to best assess the expected climate change impacts on a species, ecosystem or natural resource in a region, climate variables and climate change scenarios must be developed on a regional or even site-specific scale (Wilby et al, 2002). To provide these values, projections of climate variables must be ‘downscaled’ from the GCM results, utilizing either dynamical or statistical methods (IPCC, 2001). Statistical downscaling has two main parts.  The first and most important part is the development of the regression between daily atmospheric predictors (from NCEP) and the predictand, which is the observed  maximum or minimum daily temperature (TMAX or TMIN).  In this study, observed TMAX  was taken from Shearwater airport (used as proxy for Halifax). The second part of the downscaling process is using future predictors from the CGCM2 in the developed regression to make projections.  The focus of this study is on the first part, i.e. the development of the regression. The regression was developed from daily values of predictors and predictands from 1961-1990 (30 years).  First the dataset was normalised via subtracting the mean and dividing by the standard deviation.  A Butterworth filter was then applied to remove frequencies greater than 120 days.  The high frequency data was then divided into the four seasons which are; winter (JFM), spring (AMJ), summer (JAS) and fall (OND).   Next, the principal components (PC) of the predictors were calculated and the ten highest correlated PC were used to make the regression.  The regression was then used to predict values of high frequency TMAX  from 1961-1990.  Predictability of the regression was determined using gamma squared which is the variance in the errors of prediction divided by variance in the observed TMAX.  Predictability was highest in the fall and winter and dropped off for spring and summer.  The PC that had the highest correlation with TMAX  for each season was examined.  The parts of that PC with the largest weighting (largest coefficients) are the predictors that play the largest role in governing TMAX.  During fall and winter, vorticity and mean sea level pressure have the most influence on TMAX.  During spring, wind direction and speed have the largest influence on TMAX. Finally in the summer mean sea level pressure and geopotential height play a dominant role.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Reducing the risk of lethal encounters: vessels and right whales in the Bay of Fundy and on the Scotian Shelf} \vspace{2 mm} \begin{center}
+  \abSpeaker{Angelia~S.M.~Vanderlaan}{1}\abCoauthorO{Christopher T. Taggart}{1}\abCoauthorO{Anna R. Serdynska}{1}\abCoauthorO{Robert D. Kenney}{2}\abCoauthorO{Moira W. Brown}{3,4}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  
+  $\abAffilO{Graduate School of Oceanography, University of Rhode Island, Narragansett, RI 02882, USA}{2}$
+
+  
+  $\abAffilO{New England Aquarium, Boston, MA 02110, USA}{3}$
+
+  
+  $\abAffilO{Canadian Whale Institute, Box 633, Bolton, Ontario, Canada, L7E 5T4}{4}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{avanderl@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent The North Atlantic right whale (\emph{Eubalaena glacialis}) is critically endangered, in part, due to vessel-strike mortality. We use vessel traffic and right whale survey data ($\sim$3 nautical mile, $\sim$5.6 km resolution) for the Bay of Fundy and on the Scotian Shelf (northwest Atlantic) to determine the relative risk of lethal vessel encounters by using two estimates: 1) the event-the relative probability of a vessel encountering a right whale, and 2) the consequence-the probability of a lethal injury given an encounter. For the Bay of Fundy region our estimates demonstrate that a 62\% reduction in relative risk of lethal collision could be achieved through an amendment to the traffic separation scheme (TSS) that intersects the Right Whale Conservation Area. In the Roseway Basin region of Scotian Shelf the majority of vessels navigate outside of a Right Whale Conservation Area, though the highest relative risk is concentrated within the Conservation Area where fewer vessels are navigating at higher speeds. Here, our estimates demonstrate that a seasonal recommendatory area to be avoided (ATBA) could be designed to reduce the risk imposed by vessels upon right whales in the region. Our estimates contributed to the International Maritime Organization (IMO) adoption of a TSS amendment in the Bay of Fundy and an ATBA on the Scotian Shelf. Thus, the goal of achieving the greatest reduction in the risk of lethal vessel-encounters with whales, balanced by some minimal disruption to vessel operations while maintaining safe navigation, can be achieved.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Potential Artificial Beach Design for Baipai Artificial Island, Sanya Bay, Hainan} \vspace{2 mm} \begin{center}
+  \abSpeaker{Xiaomei~Ji}{1,2}\abCoauthorO{Yongzhan Zhang}{2}\abCoauthorO{Dakui Zhu}{2}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  
+  $\abAffilO{School of Geographic and Oceanographic Sciences, Nanjing University, Nanjing, 210093, China}{2}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{Xiaomei.Ji@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent In order to design Baipai artificial beach in Sanya Bay, Hainan Island, China, morphological characteristics of sandy beaches in the surrounding Sanya Bay have been investigated. Based upon these data an artificial beach has been designed fronting a breakwater for an artificial island in the southern part of Baipai reef. The designed arc-shaped artificial beach is about 400 m long, 40-50 m wide, including the backshore, foreshore and submarine component parts. The backshore is 20-30 m wide, and the foreshore more than 10 m with a slope of 4.5$^{\circ}$-5.0$^{\circ}$. The submarine beach levels out extending to the coral reef platform. The relative height of the artificial beach is about 2.0 m, and fill estimates are for 48,000 m$^3$ of sand. The ideal borrow sand was determined to be granules to fine quartz sand, especially coarse sand of Md50 = 0.5 mm. Such sand could be conveniently obtained from sand bars located in western Sanya Bay. Based upon USACE and Japanese empirical formulae, the designed borrow sand and beach slope should lead to a stable artificial beach with relatively low annual loss. Artificial beach construction and renourishment is a desired practice that might reasonably be applied in many places in China, not only to protect the current sandy beaches but also to stimulate the development of the tourist industry.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Bubbling from below: a look at pockmark formation} \vspace{2 mm} \begin{center}
+  \abSpeaker{Mark~A.~Barry}{1}\abCoauthorO{Bernard P. Boudreau}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{barrym@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Since the discovery of pockmarks on the ocean floor in 1970 off the coast of Nova Scotia, pockmarks have been found to exist in all of the world's oceans. Despite the attention these seabed craters have received, questions surrounding pockmarks continue to exist. How do they form, what risks they pose as geohazards, as well as their magnitude of methane release, a potent greenhouse gas, have yet to be answered. In layered sediments, planar weaknesses can exist between layers of differing sediment types, i.e. sand and mud. Along these planes of weakness, rising fluids can be deflected and spread laterally (similar to magma sill formation), a phenomenon seen in experiments using gelatine as a surrogate for sediment. The result is the formation of a domed structure that deforms the uppermost sediment layer(s), which can lead to large tensile stresses along the top of the surface layer. As sediment is extremely weak in tension, failure along the domed surface is expected, resulting in either catastrophic failure of the entire dome, or localized failure in one area of the surface. In either case, a pockmark-like structure will result. The formation mechanisms are defined by several parameters; fracture toughness (K1C), Young's Modulus (E), pressure (P), and sediment thickness (t), which can be used to predict pockmark size and pockmark formation potential. In order to minimize the risk of placing engineered structures on the sea floor of a pockmarked area, it is important to know the potential of future pockmark formation. In addition, an understanding of pockmark mechanics is needed to better estimate the release of methane to the atmosphere.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{High Resolution Wind Forecasting along the Coast of Nova Scotia} \vspace{2 mm} \begin{center}
+  \abSpeaker{Matthew~Corkum}{1}\abCoauthorO{Harold Ritchie}{1,2}\abCoauthorO{Serge Desjardins}{3}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  
+  $\abAffilO{ Environment Canada, Meteorological Research Division, Dartmouth, Nova Scotia.}{2}$
+
+  
+  $\abAffilO{Environment Canada, Meteorological Service of Canada, Dartmouth, Nova Scotia}{3}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{matthew.corkum@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Currently, the Canadian Meteorological Center (CMC) runs the Global Environmental Multiscale (GEM) model with horizontal resolution of 15 km over North America. This model does a reasonable job at resolving large scale wind and other meteorological features; however the model with 15 km horizontal resolution does not resolve wind features well over sharp topography and steep coastlines. A Limited Area Model (LAM) version of the GEM 15 km is currently run over the Eastern Canada area and used to initiate and provide boundary conditions for an experimental GEM-LAM 2.5 km. The output of the newly implemented GEM-LAM 2.5 km is used to drive a microscale model which downscales the coarser model and combines high resolution topography and roughness (as high as 20 m resolution) to produce surface wind forecasts with horizontal resolution of about 200 m. The region where this model is being tested is a central region of Nova Scotia on the east coast of Canada.  Validation of this Meso/Microscale Coupler (MMC) model will be presented using idealized winds, real data from buoys and weather stations located within the domain, as well as radarsat images of the area.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Development of a Five-Level Nested-Grid Coastal Circulation Prediction System for the Inner Scotian Shelf} \vspace{2 mm} \begin{center}
+  \abSpeaker{Bo~Yang}{1}\abCoauthorO{Jinyu Sheng}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{Bo.Yang@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent    A five-level nested-grid ocean coastal circulation prediction system known as NCOPS-LB was developed for predicting three-dimensional (3D) circulations and hydrographic distributions over the inner Scotian Shelf as part of CMEP (Center for Marine Environmental Prediction). The system is the integration of a shelf circulation forecast system known as Dalcoast3 (Thompson et al., 2007) and a high-resolution coastal circulation model for Lunenburg Bay (LB) (Zhai et al., 2008). The NCOPS-LB is forced by astronomical forcing based on WebTide developed by scientists at Bedford Institute of Oceanography and meteorological forcing based on 3-hourly weather forecast fields provided by the Meteorological Service of Canada. The nested-grid prediction system is used to study the dynamic response of the inner Scotian Shelf to tropical storm Alberto in June 2006. A comparison of model results with the observations made in LB demonstrates that the NCOPS-LB has reasonable skills in predicting surface elevations, 3D currents, and hydrographic distributions associated with coastal upwelling/downwelling over the inner Scotian Shelf. Model results are also used to identify the major physical processes in LB during the storm period. The EOF analysis of the model currents demonstrate that the throughflow in the deep waters to the southeast of LB is mainly driven by the remote wind forcing outside LB and circulation in LB is affected by wind and baroclinicity associated with local upwelling/downwelling in the bay.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Patterns in abundance and size of two deep-water gorgonian coral species, in relation to depth and substrate features, along the continental slope at Northeast Channel, Nova Scotia } \vspace{2 mm} \begin{center}
+  \abSpeaker{Shana~Watanabe}{1}\abCoauthorO{Anna Metaxas}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{sh848442@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent The assemblages of the deep-water gorgonian corals \sl Paragorgia arborea \rm and \sl Primnoa resedaeformis \rm in NE Channel along the Scotian slope, were investigated using a remotely operated vehicle in July 2006. Five transects between 500 and $\sim$900 m depth were examined at 3 sites. Both species were more abundant and larger at depths $>$ 500 m than previously reported for $<$ 500 m.  A decrease in abundance with depth was observed for both species, but the relationship was stronger for \sl Primnoa resedaeformis\rm. The size of \sl P. resedaeformis \rm decreased with depth, while the opposite was observed for \sl P. arborea\rm. These interspecific differences most likely reflect different influences of factors that vary with depth such as temperature, hydrodynamics, and fishing disturbance. The relationship between colony size and attached stone size was much stronger for \sl P. arborea \rm than for \sl P. resedaeformis\rm, suggesting that availability of suitably coarse substrate may be more important for the long-term persistence of \sl Paragorgia arborea\rm. The relationship between substrate characteristics and colony abundance will be further explored. Our results are particularly significant since they characterize the Coral Conservation Area in Atlantic Canada.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{``De-eddying'' ocean data} \vspace{2 mm} \begin{center}
+  \abSpeaker{Simon~Higginson}{1}\abCoauthorO{Keith R. Thompson}{1}\abCoauthorO{Yimin Liu}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{simon.higginson@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Climatological values of ocean variables provide a broad description of the ocean and can be used to initialize, nudge and test ocean models. We identify significant differences between model predictions and observations of mean sea surface topography in the North Atlantic and speculate that this may be caused by errors in the temperature and salinity climatologies. Such errors can arise from aliasing of long term variability in the many decades of observations contributing to a climatology. This source of error can be removed by deriving the climatology using data from a shorter observation period, but there will be noise in the signal due to eddies. We outline a simple method, based on a data assimilation technique (Cooper \& Haines, 1996), to ``de-eddy'' in situ observations of temperature and salinity using satellite altimeter measurements. A number of observations from the ARGO float array are presented, with and without adjustment, to illustrate the effectiveness of the method. This technique can be used to construct a modern climatology from observations during the past decade, and can be applied to measurements of other oceanographic variables such as nutrients and chemical tracers.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Non-isovolumetric Measurement of Young's Modulus and Poisson's Ratio of Marine Sediments} \vspace{2 mm} \begin{center}
+  \abSpeaker{Chris~L'Esperance}{1}\abCoauthorO{Bernie Boudreau}{1}\abCoauthorO{Bruce Johnson}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{jlespera@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Modeling the mechanical behavior of a complex material such as sediment, requires that the material be appropriately classified, and various physical properties of the material, elucidated. To accomplish this, an apparatus has been developed, whereby a cylindrical sample of material is submerged in a light mineral oil and is compressed uni-axially, between two plates. By monitoring the changes in the surrounding fluid volume throughout the course of the compression, changes in the volume of the sample can be inferred.  Force applied to, and strain elicited by, the sample are measured simultaneously. A novel twist on a conventional technique, this variant of the compression test, shows tremendous potential for the measurement of Young's modulus $(E)$, Poisson's ratio $(\nu)$ as well as yield stress $(\sigma_{ys})$, for `soft' solids.  The dependance of the latter properties on rate of strain as well as the stress-strain relationship of the material are also determined.  An overview of the the principle of measurement as well as a description of the experimental apparatus are provided.  Values of Young's modulus for both gelatin and natural sediments are presented and compared with values published in the literature.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{On the Angular Dependence of Acoustic Scattering from Sand in Suspension} \vspace{2 mm} \begin{center}
+  \abSpeaker{Stephanie~Moore}{1}\abCoauthorO{Alex Hay}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{moore@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Measurements of the angular dependence of the differential scattering cross section of natural sand grains are presented. For this experiment, an aqueous suspension of particles was maintained in the far field of a set of acoustic transducers using a sediment-laden turbulent jet. The multi-frequency broadband transducers (3 MHz central frequency) were used to scatter sound from the jet at various angles. The angle between the transmit and receive transducers was adjusted in $5^{\circ}$ increments to facilitate measurements of the scattered amplitude at scattering angles ranging from $98^{\circ}$ to $168^{\circ}$. Results are presented for scattering from both natural sand grains and spherical particles of comparable size. Comparisons are made between the experimental results and spherical scatterer theory and an effective grain size is determined for each particle type. Size distributions of the particles were obtained using a variety of analysis techniques including sieving, image analysis, and electroresistance pulse counting (Coulter Counter). Size analysis results are presented and compared to the effective grain sizes for sound scattering.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Extratropical Expressions of the Madden-Julian Oscillation} \vspace{2 mm} \begin{center}
+  \abSpeaker{Eric~C.~J.~Oliver}{1}\abCoauthorO{Keith R. Thompson}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{eric.oliver@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent The Madden-Julian Oscillation (MJO) is the dominant mode of atmospheric variability in the tropics on intraseasonal timescales (i.e., weeks to seasons).  It is an eastward-propagating phenomenon with clear expressions in outgoing longwave radiation, precipitation and zonal wind over the tropical oceans. Vecchi and Bond (2004 GRL, henceforth VB2004) recently found a statistical connection between the MJO and high-latitude surface air temperature and air pressure.  This study points to the possibility of using the MJO in predictions of weather and climate on timescales between the extended range weather forecast and the seasonal climate forecast.  We extend the analysis of VB2004 and search for an extratropical expression of the MJO in the global ocean.  Using a number of statistical techniques can recover connections between the MJO and high-latitude weather (namely, that of Goose Bay, NL).  We next search for a component of the MJO in global fields of sea surface temperature (SST).  In addition to expected relationships between the MJO and variability in the Indian and Pacific Oceans, we also identify significant, but weaker, seasonally dependent variations in mid- and high-latitude regions that are coherent with the MJO.
+\end{minipage}\end{minipage}
+
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Feeding ecology of North Atlantic Right Whales:  the role of zooplankton in controlling the spatiotemporal distribution of a predator across four orders of magnitude in size} \vspace{2 mm} \begin{center}
+  \abSpeaker{Kimberley~Davies}{1}\abCoauthorO{Christopher T. Taggart}{1}\abCoauthorO{Kent Smedbol}{2}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  
+  $\abAffilO{Species at Risk, St. Andrews Biological Station, St. Andrews, NB, E5B 2L9, Canada}{2}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{kim.davies@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent The North Atlantic Right Whale (\sl Eubalaena glacialis \rm) is arguably the most endangered large whale species in the world. Spatial and temporal distribution of right whales is attributed to the distribution, abundance and quality of their prey.  Prey-field characterization for this species can inform scientists where and why right whales aggregate in specific regions of Canadian waters.  There are two feeding habitats in Nova Scotia waters occupied by right whales, Grand Manan and Roseway Basins.  In these feeding grounds, the whales feed on \sl Calanus finmarchicus \rm, a calanoid copepod which diapauses and aggregates in high densities in the bottom of these basins. The objectives of my study are to 1) estimate the spatial variation in distribution, concentration and energy content of zooplankton available to right whales within Roseway Basin 2) use a time series of historical plankton samples from both habitats to determine whether inter-annual variation in the prey-field can explain variation in whale occupancy 3) determine whether spatiotemporal variation in the distribution of zooplankton within each habitat can be attributed to variability in the hydrographic properties of the seawater. Preliminary analyses indicate the prey field in Roseway Basin is concentrated in a deep layer ($>$120m) and prey abundance is highly variable on an inter-annual scale. 
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Sounds like turbulence} \vspace{2 mm} \begin{center}
+  \abSpeaker{Doris~Leong}{1}\abCoauthorO{Tetjana Ross}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{doris.leong@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Turbulence works over tiny spatial scales of flow, yet drives the bigger picture of the ocean. By mixing momentum and seawater properties, it impacts biological productivity, air-sea heat exchange, and sediment movements. Quantifying turbulence helps us to understand and establish the rate at which the ocean is mixed. Acoustic measurements of oceanic turbulence are advantageous because remote sampling is possible over large regions at high spatial resolution. However, it is difficult to conclusively identify turbulence as the source of acoustic scattering. Observations using discrete frequencies are often ambiguous in determining if scattering is from biological or physical sources. Alternatively, broadband acoustics can describe the distinct spectral shape of different scatterers. Such measurements have the potential to distinguish between scattering mechanisms. Results show that a characteristic roll-off in turbulent spectra can be successfully captured with high-frequency broadband acoustics, indicating scattering from physical microstructure.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{New method to estimate a parameter of phytoplankton physiology related to primary productivity models} \vspace{2 mm} \begin{center}
+  \abSpeaker{Adam~J.~Comeau}{1}\abCoauthorO{John J. Cullen}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{adam.comeau@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Accurate estimates of global primary productivity require knowledge of both physical conditions and the physiological response of phytoplankton to the environment. Algal physiology is commonly quantified using two parameters: the maximum rate of photosynthesis normalized to biomass (\sl P\rm  $^B_{max}$) and the light saturation parameter (\sl E\rm $_k$). Some progress has been made on understanding the environmental factors influencing the variability of \sl P\rm  $^B_{max}$, however the environmental variability of \sl E\rm $_k$ needs further study. A new approach was developed to estimate \sl E\rm $_k$ from vertical profiles using conventional fluorometers and radiometers. Near-surface decreases in fluorescence yield have been commonly observed in fluorescence profiles, and have been attributed to energy dissipation mechanisms that are triggered when irradiance saturates photosynthesis. The light level where this energy dissipation begins, \sl E\rm $_{fopt}$, is a useful index of the acclimation state of phytoplankton and directly approximates \sl E\rm $_k$ in lab studies. An algorithm was developed to measure \sl E\rm $_{fopt}$ from routine profiles of irradiance and fluorescence yield. The simple requirements of this method will allow estimates of \sl E\rm $_{fopt}$ from most oceanographic cruises, and some autonomous profiling instruments such as gliders and moored profilers.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Linear Transition Ripples: Crest Alignment and Ripple Migration} \vspace{2 mm} \begin{center}
+  \abSpeaker{Irene~Maier}{1}\abCoauthorO{Alex Hay}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{irene.maier@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Crest alignment and migration of linear transition ripples is studied using bed state data from rotary fanbeam images and wave data from electromagnetic (EM) flowmeters from 2 stations in $\sim$3-m water depth separated by 40-m cross shore distance from SandyDuck97. The data extend over more than 70 days including 12 major storm events. The ripples studied are long-crested, 2-D, anorbital linear transition ripples with mean wavelengths of 7.5 cm and heights of a few mm.For this study a method was developed to detect linear transition ripples in the sonar record automatically. Linear transition ripple crests are generally aligned perpendicularly to the incoming sea swell direction, especially during storm decay. There are small offsets and opposing trends between the two directions during non-storm conditions.Ripple migration occurred mostly onshore during storm decay phases with mean onshore migration speeds of 0.0080 cm/s. Offshore migration velocities are -0.0073 cm/s on average. Migration rates show a weak proportionality to wave skewness and asymmetry, and to wave orbital velocity and ripple crest orientation. Volume transport predicted from combined wave-current flow, calculated with separate wave friction and current drag coefficients, and transport inferred from migration rates are weakly proportional.Gross bedform-normal transport due to combined waves and currents is wave dominated and predicts ripple crest alignment only marginally better than windwave direction alone.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Isolated Population Dynamics as a  Potential Consequence of Low Abundances for Atlantic Cod} \vspace{2 mm} \begin{center}
+  \abSpeaker{Jennifer~E.~Kelly}{1}\abCoauthorO{Kenneth T. Frank}{1,2}\abCoauthorO{William C. Leggett}{3}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  
+  $\abAffilO{Bedford Institute of Oceanography, Dartmouth, NS, B2Y 4A2, Canada}{2}$
+
+  
+  $\abAffilO{Department of Biology, Queen’s University, Kingston, ON, K7L 3N6, Canada}{3}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{jennifer.e.kelly@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Synchronous recruitment dynamics of Northwest Atlantic cod stocks over large geographic scales ($\sim$500km) have been documented repeatedly over the last four decades, and have been interpreted as evidence for environmental forcing of recruitment.  However, dispersal between populations will also force dynamics towards synchrony.  Since the 1990s, cod abundances have been at all time lows, and many of the stocks have collapsed with no apparent recovery despite fishing moratoria.   Area-abundance relationships predict population range contraction at low abundances, potentially resulting in decreased successful dispersal and increasing isolation of local population dynamics.  If cod are structured as a metapopulation, as morphological, behavioral, and genetic evidence suggest, increased asynchrony at low abundances could reflect interruptions to such metapopulation functions as the rescue effect, source-sink dynamics, or recolonization.  In a series of scale dependent analyses, we examined the possibility that recruitment correlation spatial scales have changed in time.  At the coarsest resolution, the management unit, the scale of recruitment synchrony has halved from 500km for years 1950:1989, years of relative stock health, to 250km for years 1990:2005, the time period that spans the collapses, suggesting dispersal among stocks has changed and that local dynamics will dictate the time to recovery in collapsed stocks.  Finer resolution datasets from the annual research vessel surveys show that similar declines in recruitment synchrony spatial scale have occurred in two collapsed stocks. As work progresses we will attempt to use the complete age-structured, spatially referenced survey abundance data to quantify connectivity among cod populations.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Estimating Geoacoustic Parameters of Gassy Sediment using Low-Frequency Sound in St. Margaret's Bay, Nova Scotia.} \vspace{2 mm} \begin{center}
+  \abSpeaker{Marie-Noel~R.~Matthews}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{marie-noel.r.matthews@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Shallow marine gassy sediments are found all over the world.  The contained gases are linked to climate change, they can create landslides or blowouts during offshore drilling, and they affect the geoacoustic properties of the sediment.  Very few researchers have studied the acoustic aspects of gassy sediment in Canada.  Since the theory on gassy sediment implies a direct relation between the geoacoustic properties and the frequency of resonance of the gas bubbles, the impact of the gas on the acoustic properties cannot be theoretically predicted without accurate information about the size distribution and the concentration of the embedded gas bubbles.  Inversion algorithms are very efficient in evaluating the geoacoustic profile of complex seabeds but have never been used to evaluate the geoacoustic properties of a gassy sediment layer.  The main objective of this study is to estimate the values of the geoacoustic parameters of the deep central basin of St. Margaret's Bay, using a mobile underwater acoustic source (signal's main frequencies below 500 Hz), through an inversion scheme that does not rely on prior knowledge of the sediment type and properties.  This project may provide a method for the first appraisal of the geoacoustic properties of gassy sediments, without the use of expensive pressure cores or \sl in situ\rm measurements from acoustic sensing equipment embedded in the sediment.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Kelp bed defoliation by an introduced bryozoan in St Margarets Bay} \vspace{2 mm} \begin{center}
+  \abSpeaker{Megan~Saunders}{1}\abCoauthorO{Anna Metaxas}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{msaunders@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Outbreaks of the introduced epiphytic bryozoan \sl Membranipora membranacea\rm have occurred periodically since 1992 on the southern shore of Nova Scotia. Encrustations of the bryozoan cause kelps to become weakened and to fragment during storms, resulting in defoliation of kelp beds. We monitored the abundance of juvenile and adult \sl M. membranacea\rm colonies, and the percent cover of \sl M. membranacea\rm on the kelp \sl Saccharina longicruris\rm, at two sites in St. Margarets Bay, Nova Scotia, from July 2005 to November 2006. Following a warm winter in 2006, juvenile and adult colonies occurred earlier and were an order of magnitude more abundant than in 2005. In summer, this pattern was also reflected by earlier and increased percent cover on kelp. However, by autumn, there was no difference between years in the percent cover on kelp. Despite similar frequency and magnitude of storms in each year, there was massive defoliation of the kelp beds following high recruitment of \sl M. membranacea\rm in September 2006. By causing the removal of its host substrate during years of high recruitment, \sl M. membranacea\rm will likely have lower recruitment in following seasons, unless kelp beds reestablish quickly, or larvae settle on alternative substrata.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Population biology of the invasive European green crab, \sl Carcinus maenas\rm, and two native decapods in a brackish micro-tidal system in Nova Scotia, Canada.  } \vspace{2 mm} \begin{center}
+  \abSpeaker{Erin~Breen}{1}\abCoauthorO{Anna Metaxas}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{eabreen@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent The arrival of the European green crab, \sl Carcinus maenas\rm, in the Bras d'Or Lakes (BDOL), Nova Scotia, in the early 1990s, brought much concern about it's potential impact on other native decapods.  This study determined temporal (seasonal and inter-annual) and spatial patterns in the abundance, distribution and size composition of the invasive \sl C. maenas\rm, and two native crabs (\sl Cancer irroratus\rm, and \sl Dyspanopeus sayi\rm) in the BDOL.  Decapod populations were sampled at four study sites (Jamesville, Benacadie, Ross Ferry, Kempt Head) within the BDOL.  Abundance was measured in June (spring), August (summer) and October (autumn) 2005 and 2006.  We found the vertical distributions of all three species overlapped in all sites, at all depths and across both years.  All species�abundances were concentrated in the shallow depths ($\leq$ 1.5 m), particularly juveniles or small crabs ($\leq$ 30 mm carapace width, CW).  Shallow substrate composition, a high percentage of cobble and cobble composite material, was found to be similar across all sites using a MDS analysis.  There was a large pulse in abundance of \sl C. maenas\rm in October 2006 at all sites, and for \sl D. sayi\rm at Ross Ferry and Kempt Head.  There was a large recruitment pulse of newly settled \sl C. maenas\rm in October 2006 at Ross Ferry and Kempt Head, that was not observed for the other two species at any time during the survey.  Winter sea surface temperatures were warmer in 2006 compared to 2005 and corresponded to a greater abundance of \sl C. maenas\rm by as much as 2 - 8x individuals m $^{-2}$ at all sites. Our study indicates that all species' distributions may be strongly influenced by substrate type, and \sl C. maenas\rm abundance influenced by winter sea surface temperatures.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Some questions about nonlinear internal wave groups} \vspace{2 mm} \begin{center}
+  \abSpeaker{Clark~Richards}{1}\abCoauthorO{Dan E. Kelley}{1}  \vspace{2 mm}\begin{center}
+
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H
+4J1, Canada}{1}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{clark.richards@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Nonlinear internal waves (NIWs) are observed in many places in the world's oceans, and are believed to be important to both local and global ocean processes. Examples of these processes are: the vertical redistribution of nutrients in coastal waters, and accounting for some of the mixing needed to maintain the Meridional Overturning Circulation. The life history of an internal wave consists of three phases: generation, propagation, and dissipation. All are currently receiving attention in the literature. While NIWs observed in nature are almost always seen in groups, sampling limitations (i.e. data from a single fixed location mooring) and boundary condition issues in numerical models have generally forced the consideration of only single solitary waves in studies. The purpose of this talk is to raise, and begin to address, some questions regarding groups of NIWs. The focus will be on the propagation phase, and will make use of some classic and simple wave theories.
+\end{minipage}\end{minipage}
+
+
+%-----------------------------------------------------------------
+% BEGINNING OF BOTTOM TEMPLATE
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+%\vspace{3 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\end{document}
+

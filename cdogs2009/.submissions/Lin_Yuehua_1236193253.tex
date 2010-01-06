@@ -1,0 +1,97 @@
+\ifx\pdfoutput\undefined  % not running pdflatex
+ \documentclass[10pt]{article}
+\else
+ \documentclass[10pt,pdftex]{article}
+\fi 
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyheadings}
+ \pagestyle{fancyplain}
+\setlength{\headrulewidth}{0.3 pt} \setlength{\footrulewidth}{0.3
+pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS 2009}
+\chead{} \rhead{\textbf Friday, March 13, 2009} \lfoot{}
+\cfoot{Department of Oceanography, Dalhousie University}
+\rfoot{\thepage}
+
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+\paperwidth = 8 in \oddsidemargin  = 0.75 in \evensidemargin =
+0.75 in \textwidth = 6.0 in \textheight = 9 in \hoffset = -.5in
+\voffset = -1.0in
+
+\newcommand{\abTitle}[1]{\begin{center}\fontsize{12pt}{16pt}\textbf{#1}\end{center}}%
+%\newcommand{\abSpeaker}[2]{^{\mbox{#2}}\mbox{\underline{#1}}}%
+\newcommand{\abSpeaker}[2]{{\underline{#1}}$^{\mbox{#2}}$}%
+
+%\newcommand{\abCoauthorO}[2]{\mbox{, }^{\mbox{#2}}\mbox{#1}}%
+%\newcommand{\abCoauthorO}[2]{\mbox{, }\mbox{#1}^{\mbox{#2}}}%
+\newcommand{\abCoauthorO}[2]{, #1$^{\mbox{#2}}$}%
+\newcommand{\abCoauthorI}[2]{\mbox{, }^{\mbox{#2}}\mbox{#1,}}%
+\newcommand{\abCoauthorN}[2]{^{\mbox{#2}}\mbox{#1}}%
+\newcommand{\abCoauthorT}[4]{\textrm{\mbox{, }^{#4}\mbox{#1}\mbox{, }^{#4}\mbox{#3}}}%
+\newcommand{\abCoauthorTh}[6]{\textrm{\mbox{, }^{#2}\mbox{#1}\mbox{, }^{#4}\mbox{#3}\mbox{, }^{#6}\mbox{#5\
+}}}%
+\newcommand{\abCoauthorF}[8]{\textrm{\mbox{, }^{#2}\mbox{#1}\mbox{, }^{#4}\mbox{#3}\mbox{, }^{#6}\mbox{#5}\
+\mbox{, }^{#8}\mbox{#7}}}%
+
+\newcommand{\abAffilO}[2]{\centering{^{\mbox{#2}}${#1}$}}}
+%\newcommand{\abAffilO}[2]{^{\mbox{#2}}\mbox{\parbox[t]{0.9\linewidth}{\centering #1}}}%
+
+\newcommand{\abEmail}[1]{\textsl{Speaker may be reached at }\texttt{#1}}
+
+
+%-----------------------------------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+%\begin{figure}
+%\centerline{\includegraphics[width=10 cm]{cdogs_logo.jpg}}
+%\end{figure}
+
+\begin{center}\vspace{3 mm}{\Huge\textbf{C-DOGS 2009}}
+
+\vspace{2 mm}{\large\textsl{Conference of Dalhousie Oceanography
+Graduate Students}}
+
+\rule{0.4\linewidth}{0.5pt}
+
+\vspace{3 mm}{\large Friday March 13, 2009}
+
+\vspace{1 mm}{\large 9\textit{am} - 5\textit{pm}, University Hall}
+
+\vspace{1 mm}{\large Dalhousie University, Halifax, Nova Scotia}
+
+\vspace{5 mm}
+
+\rule{0.95\linewidth}{2pt}
+\end{center}
+
+\vspace{5 mm}
+%-----------------------------------------------------------------------------------
+% END OF TOP TEMPLATE
+%-----------------------------------------------------------------------------------
+
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Numerical and observational study of circulation in the Intra-Americas Sea: connection between Gulf of Mexico Loop Current intrusion and throughflow transport variability} \vspace{2 mm} \begin{center}
+  \abSpeaker{Yuehua~Lin}{1}\abCoauthorO{Richard Greatbatch}{2}\abCoauthorO{Jinyu Sheng}{1}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  
+  $\abAffilO{Leibniz Institute of Marine Sciences at Kiel University (IFM-GEOMAR), 24105 Kiel, Germany}{2}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{Yuehua.Lin@phys.ocean.dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Significant correlation between temporal variations of sea surface height anomalies in the Loop Current region and transport variations through the Yucatan Channel in the Intra-Americas Sea is found based on the analysis of numerical model results and satellite-altimeter data. Transport in the model is found to be a minimum when the Loop Current intrudes strongly into the Gulf of Mexico, typically just before a ring is shed, and to be a maximum during the next growth phase in association with the build up of warm water off the northwest coast of Cuba. Numerical experiments show that the transport variations result from the interaction between the density anomalies associated with Loop Current intrusion and the variable bottom topography. A proxy for low-frequency transport variations through the Yucatan Channel is then proposed, which compares well with the 2-year transport estimates for the Yucatan Channel during the CANEK program (10 September 1999 to 31 May 2001). A 10-year comparison between the transport proxy and the cable data sheds light on the influence of Loop Current intrusion on the Florida Current between Florida and the Bahamas.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+% BEGINNING OF BOTTOM TEMPLATE
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+\vspace{3 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\end{document}
+

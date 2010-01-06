@@ -1,0 +1,37 @@
+<abstract>
+  <title> Application of variational data assimilation to coupled physical-biological models of the North Atlantic Bloom </title>
+  <speaker>
+    <name> Witold Bagniewski </name>
+    <affil_numbers> 1,2 </affil_numbers>
+    <email>
+      <address> witold.bagniewski@dal.ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Katja Fennel </name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Mary Jane Perry </name>
+    <affil_numbers> 2 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Eric D'Asaro </name>
+    <affil_numbers> 3 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> School of Marine Sciences, University of Maine, Orono ME </name>
+    <affil_number> 2 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> Applied Physics Laboratory, University of Washington, Seattle WA </name>
+    <affil_number> 3 </affil_number>
+  </affiliation>
+  <text> Lagrangian floats and seagliders were deployed in the North Atlantic region south of Iceland from late March to early July 2008 and provided 3-D coverage of the spring bloom over time. The measured physical, chemical and bio-optical data, calibrated with data collected on three supporting cruises, was used to develop an ecosystem model describing the North Atlantic Spring Bloom. The model’s physical framework is based on the 1-D General Ocean Turbulence Model (GOTM) which is set up for a North Atlantic site at 60˚ N, 20˚ W and forced with data on wind speed, air pressure, air temperature and humidity. This physical model is coupled to a biological model that includes small phytoplankton, diatoms, zooplankton, detrital nitrogen, detrital silicate, dissolved inorganic nitrogen, silicic acid, chlorophyll and oxygen. We determined the biological parameters that are most important for model behavior through a sensitivity analysis and will apply variational data assimilation to optimize these. We will present model-based estimates of primary productivity, carbon fluxes and carbon export associated with the bloom. </text>
+</abstract>

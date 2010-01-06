@@ -1,0 +1,55 @@
+<abstract>
+  <title> Sustainability of scallop populations on Georges Bank: implications of spawning seasonality. </title>
+  <speaker>
+    <name> Chad Gilbert </name>
+    <affil_numbers> 1 </affil_numbers>
+    <email>
+      <address> chad.gilbert@dal.ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Wendy Gentleman </name>
+    <affil_numbers> 2,1 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Claudio DiBacco </name>
+    <affil_numbers> 3 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Catherine Johnson </name>
+    <affil_numbers> 3 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Jamie Pringle </name>
+    <affil_numbers> 4 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Changsheng Chen </name>
+    <affil_numbers> 5 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Engineering Mathematics and Internetworking, Dalhousie University, Halifax NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 2 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> Bedford Institute of Oceanography, Dartmouth, NS, B2Y 4A2, Canada </name>
+    <affil_number> 3 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> Institue for the study of Earth, Ocean and Space, University of New Hampshire, Durham NH, USA </name>
+    <affil_number> 4 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> Department of Fisheries Oceanography, University of Massachusetts-Dartmouth, New Bedford, MA, USA </name>
+    <affil_number> 5 </affil_number>
+  </affiliation>
+  <text> Sea scallops (Placopecten magellanicus) on Georges Bank are important both ecologically and as commercial fisheries. The population is comprised of 3 distinct scallop beds, which are connected via transport of planktonic larvae spawned in the spring and fall. In order to develop sustainable management strategies and predict effects of climate change on the population, we need to quantify how the different beds and spawning times contribute to larval recruitment. 
+
+Here, we calculate larval drift and retention using a 3D particle-tracking model, which couples seasonal currents, larval swimming, turbulent dispersion and larval development. Bed connectivity is quantified, and patterns of larval exchange are shown to differ for each season. Sensitivity to variation in adult distribution, temperature-dependent growth, reproduction and mortality is assessed. Factors controlling long-term success of the scallop population are analyzed using a modified Markov-chain approach. Implications for management of this population in the context of climate change are discussed. </text>
+</abstract>

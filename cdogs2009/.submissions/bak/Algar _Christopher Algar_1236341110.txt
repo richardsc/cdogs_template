@@ -1,0 +1,21 @@
+<abstract>
+  <title> A model for bubble rise in soft sediments </title>
+  <speaker>
+    <name> Christopher Algar  </name>
+    <affil_numbers> 1 </affil_numbers>
+    <email>
+      <address> calgar@dal.ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Dr. Bernard Boudreau </name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <text> Methane, an important greenhouse gas, is produced in both wetlands and aquatic sediments (marine and freshwater) by the degradation of organic matter under anoxic conditions.  Once produced, methane can migrate from the sediments to the overlying water and eventually the atmosphere by diffusion or bubble ebullition.   Ebullition is a significant source because it can release methane directly to the water column or atmosphere, bypassing the methane oxidizing zone, which consumes much of the diffusive flux of methane.  Here I present a mechanistic model for bubble rise in soft sediments.   The model describes the movement of a single isolated bubble.  The bubble migrates by propagating a fracture and the rate of rise is controlled by the viscoelastic response of the sediments to stresses induced by the bubble.  The model predicts rise velocities as a function of measurable sediment properties and shows that such velocities are significantly faster than the time scale of diffusive release. </text>
+</abstract>

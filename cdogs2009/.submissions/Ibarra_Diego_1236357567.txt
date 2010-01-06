@@ -1,0 +1,25 @@
+<abstract>
+  <title> A 3-D physical-biological model to assess the effect of mussel aquaculture on water-column dynamics in Ship Harbour, Nova Scotia </title>
+  <speaker>
+    <name> Diego A. Ibarra </name>
+    <affil_numbers> 1 </affil_numbers>
+    <email>
+      <address> dibarra@dal.ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Katja Fennel </name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> John J. Cullen </name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <text> We examined the water-column impacts of mussel farming in Ship Harbour (Nova Scotia) using the Regional Ocean Modeling System (ROMS) coupled with an ecosystem model containing a sessile filter-feeder sub-model. For model tuning and ground-truthing, we used data from a variety of bio-optical instruments and water samples, collected during multiple transects conducted at each tidal cycle over 4 days and nights. We used our model to quantify the effect of mussels on water-column variables by estimating the difference between model simulations with and without mussels. The resulting 3-D maps of mussel-associated impacts showed a time-averaged decrease in phytoplankton and small detritus (up to 45 and 15\%, respectively), and an increase in large detritus, ammonia and nitrate (up to 14, 3 and 2\%, respectively). In this work, we demonstrate the applicability of 3-D coupled models for aquaculture management. However, we also emphasize the need for continuous records of at least two independent estimates of phytoplankton to tune and ground-truth models, and ultimately, to understand the impact of bivalve aquaculture on pelagic ecosystems. </text>
+</abstract>

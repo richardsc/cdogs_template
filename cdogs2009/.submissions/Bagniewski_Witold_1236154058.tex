@@ -1,0 +1,100 @@
+\ifx\pdfoutput\undefined  % not running pdflatex
+ \documentclass[10pt]{article}
+\else
+ \documentclass[10pt,pdftex]{article}
+\fi 
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyheadings}
+ \pagestyle{fancyplain}
+\setlength{\headrulewidth}{0.3 pt} \setlength{\footrulewidth}{0.3
+pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS 2009}
+\chead{} \rhead{\textbf Friday, March 13, 2009} \lfoot{}
+\cfoot{Department of Oceanography, Dalhousie University}
+\rfoot{\thepage}
+
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+\paperwidth = 8 in \oddsidemargin  = 0.75 in \evensidemargin =
+0.75 in \textwidth = 6.0 in \textheight = 9 in \hoffset = -.5in
+\voffset = -1.0in
+
+\newcommand{\abTitle}[1]{\begin{center}\fontsize{12pt}{16pt}\textbf{#1}\end{center}}%
+%\newcommand{\abSpeaker}[2]{^{\mbox{#2}}\mbox{\underline{#1}}}%
+\newcommand{\abSpeaker}[2]{{\underline{#1}}$^{\mbox{#2}}$}%
+
+%\newcommand{\abCoauthorO}[2]{\mbox{, }^{\mbox{#2}}\mbox{#1}}%
+%\newcommand{\abCoauthorO}[2]{\mbox{, }\mbox{#1}^{\mbox{#2}}}%
+\newcommand{\abCoauthorO}[2]{, #1$^{\mbox{#2}}$}%
+\newcommand{\abCoauthorI}[2]{\mbox{, }^{\mbox{#2}}\mbox{#1,}}%
+\newcommand{\abCoauthorN}[2]{^{\mbox{#2}}\mbox{#1}}%
+\newcommand{\abCoauthorT}[4]{\textrm{\mbox{, }^{#4}\mbox{#1}\mbox{, }^{#4}\mbox{#3}}}%
+\newcommand{\abCoauthorTh}[6]{\textrm{\mbox{, }^{#2}\mbox{#1}\mbox{, }^{#4}\mbox{#3}\mbox{, }^{#6}\mbox{#5\
+}}}%
+\newcommand{\abCoauthorF}[8]{\textrm{\mbox{, }^{#2}\mbox{#1}\mbox{, }^{#4}\mbox{#3}\mbox{, }^{#6}\mbox{#5}\
+\mbox{, }^{#8}\mbox{#7}}}%
+
+\newcommand{\abAffilO}[2]{\centering{^{\mbox{#2}}${#1}$}}}
+%\newcommand{\abAffilO}[2]{^{\mbox{#2}}\mbox{\parbox[t]{0.9\linewidth}{\centering #1}}}%
+
+\newcommand{\abEmail}[1]{\textsl{Speaker may be reached at }\texttt{#1}}
+
+
+%-----------------------------------------------------------------------------------
+\begin{document}
+\thispagestyle{empty}
+%\begin{figure}
+%\centerline{\includegraphics[width=10 cm]{cdogs_logo.jpg}}
+%\end{figure}
+
+\begin{center}\vspace{3 mm}{\Huge\textbf{C-DOGS 2009}}
+
+\vspace{2 mm}{\large\textsl{Conference of Dalhousie Oceanography
+Graduate Students}}
+
+\rule{0.4\linewidth}{0.5pt}
+
+\vspace{3 mm}{\large Friday March 13, 2009}
+
+\vspace{1 mm}{\large 9\textit{am} - 5\textit{pm}, University Hall}
+
+\vspace{1 mm}{\large Dalhousie University, Halifax, Nova Scotia}
+
+\vspace{5 mm}
+
+\rule{0.95\linewidth}{2pt}
+\end{center}
+
+\vspace{5 mm}
+%-----------------------------------------------------------------------------------
+% END OF TOP TEMPLATE
+%-----------------------------------------------------------------------------------
+
+\begin{minipage}{\linewidth}\begin{center}\begin{minipage}{\linewidth}
+  \abTitle{Application of variational data assimilation to coupled physical-biological models of the North Atlantic Bloom} \vspace{2 mm} \begin{center}
+  \abSpeaker{Witold~Bagniewski}{1,2}\abCoauthorO{Katja Fennel}{1}\abCoauthorO{Mary Jane Perry}{2}\abCoauthorO{Eric D'Asaro}{3}  \vspace{2 mm}\begin{center}
+  
+  $\abAffilO{Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada}{1}$
+
+  
+  $\abAffilO{School of Marine Sciences, University of Maine, Orono ME}{2}$
+
+  
+  $\abAffilO{Applied Physics Laboratory, University of Washington, Seattle WA}{3}$
+
+  \end{center}
+  \vspace{2 mm}\abEmail{witold.bagniewski@dal.ca}
+  \end{center}\end{minipage}\end{center}
+  \begin{center}\rule{0.70\linewidth}{0.5 pt}\end{center}
+  \begin{minipage}{\linewidth}
+\noindent Lagrangian floats and seagliders were deployed in the North Atlantic region south of Iceland from late March to early July 2008 and provided 3-D coverage of the spring bloom over time. The measured physical, chemical and bio-optical data, calibrated with data collected on three supporting cruises, was used to develop an ecosystem model describing the North Atlantic Spring Bloom. The model’s physical framework is based on the 1-D General Ocean Turbulence Model (GOTM) which is set up for a North Atlantic site at 60˚ N, 20˚ W and forced with data on wind speed, air pressure, air temperature and humidity. This physical model is coupled to a biological model that includes small phytoplankton, diatoms, zooplankton, detrital nitrogen, detrital silicate, dissolved inorganic nitrogen, silicic acid, chlorophyll and oxygen. We determined the biological parameters that are most important for model behavior through a sensitivity analysis and will apply variational data assimilation to optimize these. We will present model-based estimates of primary productivity, carbon fluxes and carbon export associated with the bloom.
+\end{minipage}\end{minipage}
+%-----------------------------------------------------------------
+% BEGINNING OF BOTTOM TEMPLATE
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+\vspace{3 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\end{document}
+

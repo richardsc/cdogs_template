@@ -1,0 +1,29 @@
+<abstract>
+  <title> Groundline profiles on the Bay of Fundy lobster gear as a threat to North Atlantic right whales </title>
+  <speaker>
+    <name> Sean Brillant </name>
+    <affil_numbers> 1,2 </affil_numbers>
+    <email>
+      <address> sbrillant@wwfcanada.org </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Ed Trippel </name>
+    <affil_numbers> 3 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> WWF-Canada, Halifax NS </name>
+    <affil_number> 2 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> Fisheries and Oceans Canada, St. Andrews Biological Station, St. Andrews NB </name>
+    <affil_number> 3 </affil_number>
+  </affiliation>
+  <text> Conservation of North Atlantic right whales (Eubalaena glacialis) requires mortalities caused by human activities to be significantly reduced. Entanglement in fishing gear is considered an important cause of mortality and one that is underestimated. In order to reduce this risk, we must know where the whales are, where the gear is and the probability of lethal outcome if an encounter between the two occurs. An important component of this concerns the groundline, a rope used to attach traps (e.g. crab, lobster) in a series (trawl). A common assumption is that groundlines form arches in the water column and are a threat to whales. Many fishermen have challenged this interpretation. This research measured the elevations of groundlines in the Bay of Fundy and evaluated several factors that could influence them. Sensors were attached to nineteen groundlines on seven different lobster trawls that were being actively fished in the Bay of Fundy and elevations were recorded for at least two days. Results suggest that groundlines are within 3 m of the bottom most of the time, but groundlines of poorly set trawls may reach as high as 7 m. Although many factors did not influence elevations (e.g. water depth), some did (e.g. current velocity) and it was concluded that as a result of these influencing factors, fishermen in the Bay of Fundy can help ensure that their groundlines remain low, reducing the risk to right whales. </text>
+</abstract>

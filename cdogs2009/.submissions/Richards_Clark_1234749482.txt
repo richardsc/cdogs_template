@@ -1,0 +1,21 @@
+<abstract>
+  <title> Internal wave generation in the St. Lawrence Estuary </title>
+  <speaker>
+    <name> Clark Richards </name>
+    <affil_numbers> 1 </affil_numbers>
+    <email>
+      <address> clark.richards@dal.ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Dan Kelley </name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <text> Mixing in coastal environments is a process affecting many branches of oceanography; it contributes to fluxes of heat and salt, and redistributes chemical and biological tracers. Internal waves are a common feature in the stratified ocean, and are believed to be an important contributor to mixing. Recent and ongoing studies in the St. Lawrence Estuary have identified regions of internal wave propagation and dissipation, but to date little has been done to examine the generation phase. Fieldwork performed in the summer of 2008 identified a potential source region for internal waves, and data were collected to characterize the physical properties of the water column and tidal flow. This presentation will focus on shipboard and moored ADCP time series, echosounder transects, and CTD data as they relate to several different theories for wave generation. </text>
+</abstract>

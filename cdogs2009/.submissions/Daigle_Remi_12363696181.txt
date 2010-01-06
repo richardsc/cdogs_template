@@ -1,0 +1,49 @@
+<abstract>
+  <title> Physiological and Ecological Interactions of Native Cancer spp. and Carcinus Maenas in British Columbia, Canada </title>
+  <speaker>
+    <name> Remi Daigle </name>
+    <affil_numbers> 1 </affil_numbers>
+    <email>
+      <address> daigleremi@gmail.com </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Claudio DiBacco </name>
+    <affil_numbers> 2 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Monica Bravo </name>
+    <affil_numbers> 2,3 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Tom Therriault </name>
+    <affil_numbers> 4 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Colin Brauner </name>
+    <affil_numbers> 3 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Graham Gillespie </name>
+    <affil_numbers> 4 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> Bedford Institute of Oceanography, Dartmouth, NS, B2Y 4A2, Canada </name>
+    <affil_number> 2 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> University of British Columbia, Vancouver, Canada </name>
+    <affil_number> 3 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> Fisheries and Oceans, Nanaimo, Canada </name>
+    <affil_number> 4 </affil_number>
+  </affiliation>
+  <text> This study characterizes ecological interactions between populations of two native Cancer spp. and the invasive green crab, Carcinus maenas, in Barkley Sound, British Columbia. Laboratory salinity tolerance tests demonstrated that C. maenas had a higher mean tolerance to osmotic stress when compared to Cancer productus and C. gracilis with the latter being the least tolerant. Trapping surveys revealed depth segregated populations of C. gracilis and C. maenas - depth distributions for both spp. fluctuated over time and were significantly related to salinity and ultimately regional rainfall. It is suggested that osmoconforming C. gracilis retreats to deeper waters at times corresponding to a depressed halocline coinciding with heavy freshwater input. Co-occurrence of C. maenas and C. productus was extremely rare. The smaller sized osmoregulating C. maenas seem relegated to areas of high freshwater discharge due to biotic resistance by larger native crabs. These findings suggest that halotolerance may have facilitated the establishment of green crab populations on Canada's west coast. Salinity tolerance data are valuable for assessing the risk of further invasions in estuaries along British Columbia's coast and similar environments. </text>
+</abstract>

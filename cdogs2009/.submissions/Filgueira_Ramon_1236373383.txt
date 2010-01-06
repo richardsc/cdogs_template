@@ -1,0 +1,21 @@
+<abstract>
+  <title> A box model of carrying-capacity for mussel aquaculture in a Norwegian fjord </title>
+  <speaker>
+    <name> Ramon Filgueira </name>
+    <affil_numbers> 1 </affil_numbers>
+    <email>
+      <address> ramonf@dal.ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Jon Grant </name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <text> Shellfish carrying-capacity is determined by the interaction of cultured species with the ecosystem, principally constrained by environmental characteristics and particularly food availability. A recent experiment carried out in Lysefjord (SW Norway) has shown that artificial upwelling of nutrient-rich deeper water stimulated phytoplankton growth, potentially increasing the carrying-capacity for mussel cultivation. With the aim of evaluating aquaculture effects and assisting in development of sustainable mussel culture in Lysefjord, an object-oriented model of environmental-mussel aquaculture interactions and mussel carrying-capacity was constructed. A multiple box ecosystem model was developed with highly configurable GUI-based software (Simile) that allows explicit coupling between boxes, which represent regions of the fjord. Once the box model was developed and calibrated, subsequent application of PEST (Parameter ESTimation) allowed optimization of different variables of the model in order to manage mussel production according to carrying-capacity criteria. The Simile model and the simultaneous application of PEST allowed several scenarios taking into account different stocking densities and the creation of new cultivation areas. </text>
+</abstract>

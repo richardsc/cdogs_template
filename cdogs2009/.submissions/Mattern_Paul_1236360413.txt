@@ -1,0 +1,29 @@
+<abstract>
+  <title> Comparing satellite data and model output using image distance measures </title>
+  <speaker>
+    <name> Paul Mattern </name>
+    <affil_numbers> 1,2 </affil_numbers>
+    <email>
+      <address> paul.mattern@Dal.Ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Katja Fennel </name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Mike Dowd </name>
+    <affil_numbers> 2 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> Department of Mathematics and Statistics, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 2 </affil_number>
+  </affiliation>
+  <text> Quantitative comparison of model results with measured data is an essential part of model skill assessment and data assimilation. Specifically, we are seeking a suitable measure of fit for comparing surface ocean satellite images with corresponding model output. We evaluated a variety of distance measures including the commonly used Root-Mean-Squared (RMS) error, and other metrics from the image comparison literature. In our assessment simple pixel-by-pixel comparison like the RMS error yield unsatisfactory results in many cases. We will present examples that demonstrate the advantages of alternative image distance and fit measures, for example a modified version of the Hausdorff distance, which we adapted for use with (partially incomplete) satellite images. </text>
+</abstract>

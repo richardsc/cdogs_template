@@ -1,0 +1,28 @@
+<abstract>
+  <title> A Phytoplankton Pigment Extraction Protocol for Marine Sediments </title>
+  <speaker>
+    <name> Lisa Delaney </name>
+    <affil_numbers> 1 </affil_numbers>
+    <email>
+      <address> lisa.delaney@dal.ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Marlon Lewis </name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Markus Kienast </name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <text> Sediments were collected from Lunenburg Bay, NS and Saanich Inlet, BC, Canada. Pigments were extracted from these sediments using five different solvents. In addition, the effects of freeze-drying and different extraction times were tested. It was found that treatment time did not lead to significant changes in pigment concentration. Freeze-drying samples typically resulted in a significant decrease in pigment concentration. The general trend for solvent type showed that the more abrasive solvents extracted a greater concentration of pigment from Saanich Inlet sediments. From the Lunenburg Bay sediments, acetone-based mixtures extracted higher concentrations of pigment.
+
+The effect of storage temperature was also assessed. Sediment samples were collected from the North Water (NOW) polynya, NU, Canada. Replicates were stored at one of four different temperatures for 22 months. It was found that samples stored below freezing yielded a significantly greater pigment concentration in almost every case.
+ </text>
+</abstract>
