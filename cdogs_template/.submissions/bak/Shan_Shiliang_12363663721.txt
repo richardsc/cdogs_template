@@ -1,0 +1,33 @@
+<abstract>
+  <title> Numerical Study of Tidal Circulation in Jiaozhou Bay and Adjacent Coastal Waters Using a High-resolution, Three-dimensional Circulation Model </title>
+  <speaker>
+    <name> Shiliang Shan </name>
+    <affil_numbers> 1,2 </affil_numbers>
+    <email>
+      <address> sshan@phys.ocean.dal.ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Huaming Yu </name>
+    <affil_numbers> 2 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Xueen Chen </name>
+    <affil_numbers> 2 </affil_numbers>
+  </coauthor>
+  <coauthor>
+    <name> Jinrui Chen </name>
+    <affil_numbers> 2 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <affiliation>
+    <name> College of Physical and Environmental Oceanography, Ocean University of China, Qingdao 266100, P. R. China </name>
+    <affil_number> 2 </affil_number>
+  </affiliation>
+  <text> A high-resolution, three-dimensional coastal circulation model was constructed for Jiaozhou Bay and adjacent coastal waters using the finite-volume method (FVM). The main advantage of the FVM is that complex coastline and irregular topography can easily be represented in the model by unstructured triangular grid. The coastal circulation model has a fine-resolution of ~30 m for harbours and Qingdao Olympic Sailing Center and uses the wet/dry lateral boundaries for the inter-tidal zone. The model results demonstrate that tides in Jiaozhou Bay are mainly semi-diurnal. Outside Jiaozhou Bay, tidal waves propagate from the northeast to southwest with a cyclonic rotation. As approaching the mouth of Jiaozhou Bay, tidal currents bifurcate: with one continually propagates to southwest along the coastline, the other one propagates into inner Jiaozhou Bay with increasing amplitude. Near the mouth of Jiaozhou Bay, Eulerian residual currents have a multi-eddy structure, with surface residual tidal currents greater than the bottom currents. Tidal energy propagates from the northeast to southwest outside Jiaozhou Bay. Near the mouth of Jiaozhou Bay part of tidal energy transmits to southwest along the coastline, the other part of energy converges at mouth of Jiaozhou Bay, and then diverges to the inward Bay. A numerical dye release experiment demonstrates that the mouth of Jiaozhou Bay is an active zone of water exchange. </text>
+</abstract>

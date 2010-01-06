@@ -1,0 +1,263 @@
+<html>
+  <head>
+  <title> Typeset like a real C-DOG </title>
+  <link type="text/css" rel="stylesheet" href="dogss_style.css">
+</head>
+<body>
+<center>
+  <table border="0" cellpadding="5" cellspacing="10" width = 90%>
+    <tr><td style="background-color:rgb(222,222,222);color:black">
+        <center><p class="titlehead">A quick guide to LaTeX symbols</p></center>
+  </td></tr>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="10" width = 90%>
+  <tr><td style="background-color:rgb(244,255,255);color:black">
+    <div class="formfill"> Basically, there are two sets of symbols you need
+      to know for LaTeX: those for <strong>text mode</strong> and those for <strong>math mode</strong>. This guide will go through the basics of each.
+    </div>
+  </tr></td>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="10" width = 90%>
+  <tr><td style="background-color:rgb(244,255,255);color:black">
+    <p class="title"> TEXT MODE: Accents</p>
+
+    <p class="formfill"> If you want to have an accent on a letter
+      (for example your name is Josée not Josee), then you do it
+      like this, sticking with the example:</p>
+
+    <p class="formfill"><strong>You Want:</strong> Hi, my name is Josée.</p>
+    <p class="formfill"><strong>LaTeX:</strong> Hi, my name is Jos\'{e}e.</p>
+
+    <p class="formfill">The way the command works, is that the
+    backslash ("\") tells LaTeX that a command is coming, then you
+    have the command (put an accent " ' " over the letter "{e}"). Here
+    is a list of accents, and the commands that go with them.</p>
+
+    <center>
+    <img WIDTH=485 HEIGHT=243 ALIGN=BOTTOM ALT="table6" 
+    SRC="http://www.agu.org/texsym1.gif"></center>
+    </div>
+  </tr></td>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="10" width = 90%>
+  <tr><td style="background-color:rgb(244,255,255);color:black">
+    <p class="title"> TEXT MODE: Italics</p>
+    <div class="formfill">
+
+    <p> If you want to <i>italicize</i> something
+    then you do it like this:
+
+    <p><strong>You Want:</strong> A main target of the
+    longline fishery is bigeye tuna (<i>Thunnus obesus</i>).</p>
+
+    <p><strong>In LaTeX:</strong> A main target of the
+    longline fishery is bigeye tuna (<font class="italic">\sl Thunnus obesus\rm</font> ).
+
+    <p> Again, the backslash ("\") tells LaTeX that a command is
+    coming.  The space after the command will not create a space in
+    your document, but it is necessary for LaTeX to recognize the
+    command. The <strong>\sl</strong> tells LaTeX to use a
+    <i><strong>sl</strong>anted</i> font. The <strong>\rm</strong>
+    tells LaTeX to return to a <strong>r</strong>o<strong>m</strong>an
+    font.</p>
+
+    <p> Note that if you set the font to \sl <i> but then forget to go
+    back to roman font, the text will continue in italics until the
+    </i> \rm command is used.
+  </tr></td>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="10" width = 90%>
+  <tr><td style="background-color:rgb(244,255,255);color:black">
+    <p class="title"> TEXT MODE: New Paragraphs, spaces, etc.</p>
+    <div class="formfill">
+
+    <p> LaTeX treats tabs, spaces, and single carriage returns the same:</p>
+    <p> <pre><strong>In LaTeX:</strong> The quick       brown
+fox jumped         over the       lazy 
+              dog.</pre></p>
+    <p><strong>Output:</strong> The quick       brown
+fox jumped         over the       lazy 
+              dog.</p>
+<hr>
+    <p>If you want to start a second paragraph (in your abstract), you must have <b>two carriage returns back-to-back</b>:</p>
+    <p> <pre><strong>In LaTeX:</strong> The quick brown fox jumped over the
+
+lazy dog.</pre></p>
+    <p><strong>Output:</strong> The quick       brown
+fox jumped         over the  <br><br>     lazy 
+              dog.</p>
+    <p> Don't worry about tabs at the beginning of paragraphs and such, 
+    that will be taken care of by LaTeX later.</p>
+  </tr></td>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="10" width = 90%>
+  <tr><td style="background-color:rgb(244,255,255);color:black">
+    <p class="title"> TEXT MODE: Special symbols: $, %, #, &, {, },
+    _</p>
+    <div class="formfill">
+
+    <p>Some symbols in latex have special meanings. For example, you
+    want to write that 80% of the variance is described by ice-melting
+    events. It is important that you are aware that the % symbol is
+    used to make comments in LaTeX that won't be in the final
+    document.</p>
+
+    <p><font color=red><strong>Wrong:</strong></font></p>
+
+    <p><strong>In LaTeX:</strong> 80% of the variance is described by
+    ice-melting events.<br>
+    <strong>Output:</strong> 80</p>
+
+    <p><font color=red><strong>Right:</strong></font></p>
+    <p><strong>In LaTeX:</strong> 80\% of the variance is described by
+    ice-melting events.<br>
+    <strong>Output:</strong> 80% of the variance is described by
+    ice-melting events.</p>
+    
+    <p> To make sure you get what you expect, be sure that the
+    following symbols are preceded by a backslash: $, %, #, &, {, },
+    _</p>
+  </tr></td>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="10" width = 90%>
+  <tr><td style="background-color:rgb(244,255,255);color:black">
+    <p class="title">MATH Mode: Entering and exiting</p>
+    <div class="formfill">
+    <p>By default, LaTeX is in text mode, but its real power comes
+    when you need to typeset equations and mathematics. You enter and
+    exit math mode by using the dollar-sign, $. For example:</p>
+
+    <p><strong>You Want:</strong> The gravitational force on an object of
+    density, &#961; (kg m<sup>-3</sup>), is <em>F =
+    </em>&#961;<em>Vg</em>, where <em>V</em> is volume (m<sup>3</sup>)
+    and <em>g</em> is acceleration due to gravity (N
+    kg<sup>-1</sup>).</p>
+
+    <p><strong>In LaTeX:</strong>The gravitational force on an object of
+    density, <font class="math">$\rho$</font> (kg m<font class="math">$^{-3}$</font>), is <font class="math">$F=\rho Vg$</font>, where <font class="math">$V$</font> is volume
+    (m<font class="math">$^3$</font>) and <font class="math">$g$</font> is acceleration due to gravity (N
+    kg<font class="math">$^{-1}$</font>).</p>
+
+    <p> Note that things that are in math mode have been highlighted in green. </p>
+  </tr></td>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="10" width = 90%>
+  <tr><td style="background-color:rgb(244,255,255);color:black">
+    <p class="title">MATH Mode: superscripts and subscripts</p>
+    <div class="formfill">
+    <p>These are probably the most used items in math mode. As you can
+    see from the example above, LaTeX allows you to put superscripts by 
+    using the "^" symbol. Similarly, subscripts are done with the "_".
+    Here are some examples</p>
+
+    <p><strong>You Want:</strong> In the ocean,
+    [HCO<sub>3</sub><sup>-</sup>] should increase due to
+    CO<sub>2</sub> emmisions into the atmosphere.</p>
+
+    <p><strong>In LaTeX:</strong> In the ocean, 
+    [HCO<font class="math">$_3^-$</font>] should increase
+    due to CO<font class="math">$_2$</font> emmisions into the atmosphere.</p>
+
+    One last importnat thing to note about using superscripts and
+    subscripts is that if more than one character is to be
+    super/subscripted, it must be {bracketed}.
+
+    <p><font color=red><strong>Wrong:</strong></font></p>
+
+    <p><strong>In LaTeX:</strong> The shelfbreak velocity, <font class="math">$u_sb$</font>, was measured
+    at 0.1 m s<font class="math">$^-1$</font>.<br>
+    <strong>Output:</strong> The shelfbreak velocity,
+    <em>u<sub>s</sub>b</em>, was measured at 0.1 m s<sup>-</sup>1.
+
+    <p><font color=red><strong>Right:</strong></font></p>
+    <p><strong>In LaTeX:</strong> The shelfbreak velocity, <font class="math">$u_{sb}$</font>, was measured
+    at 0.1 m s<font class="math">$^{-1}$</font>.<br>
+    <strong>Output:</strong> The shelfbreak velocity,
+    <em>u<sub>sb</sub></em>, was measured at 0.1 m s<sup>-1</sup>.
+  </tr></td>
+</table>
+
+<table border="0" cellpadding="5" cellspacing="10" width = 90%>
+  <tr><td style="background-color:rgb(244,255,255);color:black">
+    <p class="title">MATH Mode: mathy symbols</p>
+    <div class="formfill">
+
+    <p>You might want to use greek letters, "exp", "sin", or other
+    mathematical symbols in your text. Here are a bunch of tables that
+    should help. If you want more examples, <a href="#examples"> go to
+    the bottom of the page</a>. Remember that these symbols must be
+    entered in math mode (i.e. between the dollar signs):
+
+    <p><center>
+      <img WIDTH=385 HEIGHT=242 ALIGN=BOTTOM
+      SRC="http://www.agu.org/texsym4.gif">
+    </center></p>
+
+    <p><center>
+      <img WIDTH=386 HEIGHT=762
+      SRC="http://www.agu.org/texsym5.gif">
+    </center></p>
+
+    <p><center>
+      <img WIDTH=418 HEIGHT=670
+      SRC="http://www.agu.org/texsym7.gif">
+    </center></p>
+
+    <p><center>
+      <img WIDTH=573 HEIGHT=351
+      SRC="http://www.agu.org/texsym8.gif">
+    </center></p>
+
+    <p><center>
+      <img WIDTH=403 HEIGHT=426 
+      SRC="http://www.agu.org/texsym9.gif">
+    </center></p>
+
+    <p><center>
+      <img WIDTH=355 HEIGHT=274
+      SRC="http://www.agu.org/texsym10.gif">
+    </center></p>
+
+    <p><center>
+      <img WIDTH=490 HEIGHT=578
+      SRC="http://www.agu.org/texsym11.gif">
+    </center></p>
+
+    <p><center>
+      <img WIDTH=386 HEIGHT=609
+      SRC="http://www.agu.org/texsym12.gif">
+    </center></p>
+  </tr></td>
+</table>
+
+<a name="examples">
+<table border="0" cellpadding="5" cellspacing="10" width = 90%>
+  <tr><td style="background-color:rgb(244,255,255);color:black">
+    <p class="title"> Mathy Examples</p>
+    <div class="formfill">
+
+    <p><strong>You want</strong>: The Coriolis frequency is
+    <em>f</em>=2&#937;sin&#966;.<br>
+    <strong>In LaTeX:</strong> The Coriolis frequency is
+    <font class="math">$f=2\Omega\sin\phi$</font>.
+
+    <p><strong>You want</strong>: The number of fish of age
+    <em>t</em> is approximated as <em>N(t) =
+    N<sub>0</sub></em>e<sup><em>-Zt</em></sup>.<br>
+    <strong>In LaTeX:</strong> The number of fish of age 
+    <font class="math">$t$</font> is approximated
+    as <font class="math">$N(t) = N_o$</font>e<font 
+    class="math">$^{-Zt}$</font>.</p>
+  </tr></td>
+</table>
+
+</body>
+</html>
+
