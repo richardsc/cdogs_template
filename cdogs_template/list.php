@@ -45,10 +45,10 @@ Proceedings (PDF)</a></p></center>
 <tr><td style="background-color:rgb(255,255,255);color:black">
 Sponsored by:<br>
 <center>
-<a href="http://www.phys.ocean.dal.ca/dosa" target="#main"><img src="dosa_logo.jpg" border=0 width=150></a>
-<a href="http://oceanography.dal.ca" target="#main"><img src="DAL_Oce_logo_clear.gif" border=0 width=150></a>
-<a href="http://www.nortekscientific.com" target="#main"><img src="NS_Logo_small.jpg" border=0 width=150></a><br><br>
-<a href="http://www.drinkpropeller.ca" target="#main"><img src="Propeller_logo.jpg" border=0 width=150></a><br><br>
+<a href="http://www.phys.ocean.dal.ca/dosa" target="#main"><img src="logos/dosa_logo.jpg" border=0 width=150></a>
+<a href="http://oceanography.dal.ca" target="#main"><img src="logos/DAL_Oce_logo_clear.gif" border=0 width=150></a>
+<a href="http://www.nortekscientific.com" target="#main"><img src="logos/NS_Logo_small.jpg" border=0 width=150></a><br><br>
+<a href="http://www.drinkpropeller.ca" target="#main"><img src="logos/Propeller_logo.jpg" border=0 width=150></a><br><br>
 <a href="http://dsu.ca" target="#main"><img src="dsu_logo.jpg" border=0 width=150></a><br><br>
 </td></tr>
 
