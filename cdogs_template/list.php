@@ -12,17 +12,19 @@
 class="plain">Welcome</a></p></center>
 </td></tr>
 
+<!--
 <tr><td style="background-color:rgb(222,222,222);color:black">
 <center><p class="title"><a href="abstracts/submitted.php" target ="main" 
 class="plain">Abstracts Online</p></center>
 </td></tr>
+-->
 
-<!--
+
 <tr><td style="background-color:rgb(222,222,222);color:black">
 <center><p class="title"><a href="submit.html" target ="main"
 class="plain">Submit<br>Abstract</a></p></center>
 </td></tr>
--->
+
 
 <!--
 <tr><td style="background-color:rgb(222,222,222);color:black">
@@ -53,7 +55,7 @@ Sponsored by:<br>
 <a href="http://oceanography.dal.ca" target="#main"><img src="logos/DAL_Oce_logo_clear.gif" border=0 width=150></a>
 <a href="http://www.nortekscientific.com" target="#main"><img src="logos/NS_Logo_small.jpg" border=0 width=150></a><br><br>
 <a href="http://www.drinkpropeller.ca" target="#main"><img src="logos/Propeller_logo.jpg" border=0 width=150></a><br><br>
-<a href="http://dsu.ca" target="#main"><img src="logo/dsu_logo.jpg" border=0 width=150></a><br><br>
+<a href="http://dsu.ca" target="#main"><img src="logos/dsu_logo.jpg" border=0 width=150></a><br><br>
 </td></tr>
 
 <tr><td style="background-color:rgb(255,255,255);color:black">
