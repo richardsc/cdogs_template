@@ -1,6 +1,6 @@
 <html>
 <head>
-<title> C-DOGS 2009 </title>
+<title> C-DOGS YYYY </title>
 </head>
 <frameset rows="10,90" border=0>
   <frame src="head.php" name="head" marginwidth=0>

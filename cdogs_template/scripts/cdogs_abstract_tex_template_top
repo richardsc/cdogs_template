@@ -8,8 +8,8 @@
 \usepackage{fancyheadings}
  \pagestyle{fancyplain}
 \setlength{\headrulewidth}{0.3 pt} \setlength{\footrulewidth}{0.3
-pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS 2009}
-\chead{} \rhead{\textbf Friday, March 13, 2009} \lfoot{}
+pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS YYYY}
+\chead{} \rhead{\textbf DAY, MONTH DD, YYYY} \lfoot{}
 \cfoot{Department of Oceanography, Dalhousie University}
 \rfoot{\thepage}
 
@@ -47,16 +47,16 @@ pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS 2009}
 %\centerline{\includegraphics[width=10 cm]{cdogs_logo.jpg}}
 %\end{figure}
 
-\begin{center}\vspace{3 mm}{\Huge\textbf{C-DOGS 2009}}
+\begin{center}\vspace{3 mm}{\Huge\textbf{C-DOGS YYYY}}
 
 \vspace{2 mm}{\large\textsl{Conference of Dalhousie Oceanography
 Graduate Students}}
 
 \rule{0.4\linewidth}{0.5pt}
 
-\vspace{3 mm}{\large Friday March 13, 2009}
+\vspace{3 mm}{\large DAY MONTH DD, YYYY}
 
-\vspace{1 mm}{\large 9\textit{am} - 5\textit{pm}, University Hall}
+\vspace{1 mm}{\large 9\textit{am} - 5\textit{pm}, LOCATION}
 
 \vspace{1 mm}{\large Dalhousie University, Halifax, Nova Scotia}
 

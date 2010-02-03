@@ -215,14 +215,14 @@ return $s;
 <html lang="en">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>First C-DOGS</title>
+<title>C-DOGS</title>
 <link type="text/css" rel="stylesheet" href="../cdogs.css">
 </head>
 <body>
 <table border="0" cellpadding="3" cellspacing="5" width ="100%">
 <tr>
 <td colspan=3 style="background-color:rgb(222,222,222);color:black">
-<br><center><p class="titlehead">C-DOGS 2009 Abstracts<br>(note: some symbols/accents may look strange)</p> 
+<br><center><p class="titlehead">C-DOGS YYYY Abstracts<br>(note: some symbols/accents may look strange)</p> 
 </center><br>
 </td>
 </tr>

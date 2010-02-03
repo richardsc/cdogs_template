@@ -8,7 +8,7 @@
 <table border="0" cellpadding="3" cellspacing="5" width = 100%>
 <tr>
 <td colspan=3 style="background-color:rgb(222,222,222);color:black">
-<br><center><p class="title">WELCOME TO C-DOGS 2009</p> 
+<br><center><p class="title">WELCOME TO C-DOGS YYYY</p> 
 </center><br>
 </td>
 </tr>
@@ -19,42 +19,51 @@
 <tr style="background-color:rgb(244,255,255);color:0066ff">
 <td colspan = 3>
 
+<!--
 <p>
 <li> 
-C-DOGS 2009 was a huge success! We had a packed house all day, and the presentations were all top notch (as usual). A big thanks goes out to all the presenters, and to those who attended. A special congratulations goes to Megan Saunders and Doris Leong for winning the best presentation prizes (PhD and MSc respectively). See you again next year!
+C-DOGS 2009 was a huge success! We had a packed house all day, and the presentations were all top notch (as usual). A big thanks goes out to all the presenters, and to those who attended.
 </p>
+-->
 
 <!--
 <p>
 <li> 
-C-DOGS 2009 will be held on Friday March 13, 2009.
-</p>
-<p>
-<li> 
-It will run from 9-5 in University Hall (MacDonald, or Alumni, Building - click <a href="studleymap.jpg" target="#main">here</a> for a map).
+C-DOGS YYYY will be held on DAY MONTH DD, YYYY.
 </p>
 -->
+
+<!--
+<p>
+<li> 
+It will run from 9-5 in LOCATION (click for a map).
+</p>
+-->
+
+<!--
 <p>
 <li> C-DOGS would like to thank our sponsors, <a href="http://www.phys.ocean.dal.ca/dosa/" target="#main">DOSA</a>, <a href="http://www.nortekscientific.com" target="#main">Nortek Scientific</a>, and <a href="http://www.drinkpropeller.ca" target="#main">Propeller Beer</a> for their support of this event.
 </p>
+-->
+
 <!--
 <p>
 <li> <b> Abstract submission is open!! Click on the link to the left of the page to submit an abstract.</b>
 </p>
+-->
 
+<!--
 <p>
 <li> The C-DOGS committee is pleased to announce two new cash prizes of <b>$150</b>; one for the best MSc student talk and one for the best PhD student talk.  These prizes have been generously donated to the students from the department and both award winners will be chosen by the students by ballot at the end of the day.   Submit your abstract today and come join us all day on March 13th to vote for your favourite speakers.
 </p>
-
-<p>
-<li> C-DOGS 2009 will feature a keynote talk first thing in the day, by our very own Bob Fournier, entitled <i>A Brief Look Backward</i>. Come early to support our graduate students, and learn some of the history of oceanography in Halifax!
-/p>
 -->
+
 <!--
 <p>
-<li> <b>Online abstract submission will open Monday February 9th. The abstract submission deadline is Friday March 6, 2009.</b>
+<li> <b>Online abstract submission will open DAY MONTH DD. The abstract submission deadline is DAY MONTH DD, YYYY.</b>
 </p>
 -->
+
 <!--
 <p>
 <li> <b>The deadline for abstract submissions has passed. Check out the <a href=schedule/schedule.php>Schedule</a>.</b>
@@ -79,9 +88,9 @@ It will run from 9-5 in University Hall (MacDonald, or Alumni, Building - click 
 <p >
 <p>Attention all grad students and post-docs:</p>
 
-<p> We invite you to give a presentation at the Seventh Conference of
+<p> We invite you to give a presentation at the NUMBERTH Conference of
 Dalhousie Oceanography Grad Students (C-DOGS), which will take place
-on Friday March 13th, 2009. This is an opportunity for you to share
+on DAY MONTH DD, YYYY. This is an opportunity for you to share
 your research and learn about the research of your peers in a friendly
 environment. The day will be structured in a conference style, with 15
 minutes per speaker (including set-up and questions). Although only
