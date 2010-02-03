@@ -31,16 +31,20 @@ class="plain">Submit<br>Abstract</a></p></center>
 </td></tr>
 -->
 
+<!--
 <tr><td style="background-color:rgb(222,222,222);color:black">
 <center><p class="title"><a href="abstracts/booklet/cdogs2009_abstracts.pdf" 
 target ="main" class="plain">
 Proceedings (PDF)</a></p></center>
 </td></tr>
+-->
 
+<!--
 <tr><td style="background-color:rgb(222,222,222);color:black">
 <center><p class="title">
 <a href="schedule/schedule.php" class="plain" target="main">Schedule</a></p></center>
 </td></tr>
+-->
 
 <tr><td style="background-color:rgb(255,255,255);color:black">
 Sponsored by:<br>
@@ -49,7 +53,7 @@ Sponsored by:<br>
 <a href="http://oceanography.dal.ca" target="#main"><img src="logos/DAL_Oce_logo_clear.gif" border=0 width=150></a>
 <a href="http://www.nortekscientific.com" target="#main"><img src="logos/NS_Logo_small.jpg" border=0 width=150></a><br><br>
 <a href="http://www.drinkpropeller.ca" target="#main"><img src="logos/Propeller_logo.jpg" border=0 width=150></a><br><br>
-<a href="http://dsu.ca" target="#main"><img src="dsu_logo.jpg" border=0 width=150></a><br><br>
+<a href="http://dsu.ca" target="#main"><img src="logo/dsu_logo.jpg" border=0 width=150></a><br><br>
 </td></tr>
 
 <tr><td style="background-color:rgb(255,255,255);color:black">
