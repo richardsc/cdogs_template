@@ -1,1 +1,0 @@
-' <a class="plain" target="main" href="../abstracts/submitted.php?abs=Brown_Joe_1265912657"/>Joe Brown</a/>'
