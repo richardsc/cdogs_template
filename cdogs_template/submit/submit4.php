@@ -69,7 +69,7 @@ function tex_code($name) { // color codes latex in html using dogss_style.css
 <tr><td style="background-color:rgb(244,255,255);color:black">
 <div class="formfill">
 This page is where provide your abstract. Note that the submission format for accents, symbols, italics, etc., is LaTeX. If you need examples, 
-	<a href="../latex_guide.html" target="new window">click here</a>. If you are cutting and pasting from a non-text editor, such as MSWord, make sure you convert all symbols to LaTeX, and remove any extra newline characters (^M).<hr>
+	<a href="../latex_guide.html" target="new window">click here</a>. Common LaTeX codes include \% (for the percent sign), \sl text \rm (for italics), and $^{\circ}$ (for a degrees sign). If you are cutting and pasting from a non-text editor, such as MSWord, make sure you convert all symbols to LaTeX, and remove any extra newline characters (^M).<hr>
 <center>
   <form action ="submit4_test.php" method="post">
   <textarea name="abstract" cols=80 rows=30></textarea><br>
