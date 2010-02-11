@@ -47,7 +47,7 @@
     <div class="formfill">
       <form action="submit1_test.php" target="main" method="post">
 	Title of Presentation: <input type="text" name="title" /> <br/>
-  	Speaker: <input type="text" name="speaker"/> <br/>
+      Speaker (firstname and lastname ONLY - no middle names or initials please): <input type="text" name="speaker"/> <br/>
         Speaker's Email Address <input type="text" name="email"/> <br/>
 	Number of coauthors: 
 	<input type="radio" name="co" value="0" checked> 0 
