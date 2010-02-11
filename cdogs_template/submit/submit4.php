@@ -68,7 +68,8 @@ function tex_code($name) { // color codes latex in html using dogss_style.css
 <table border="0" cellpadding="5" cellspacing="10" width = 90%>
 <tr><td style="background-color:rgb(244,255,255);color:black">
 <div class="formfill">
-This page is where provide your abstract. <hr>
+This page is where provide your abstract. Note that the submission format for accents, symbols, italics, etc., is LaTeX. If you need examples, 
+	<a href="../latex_guide.html" target="new window">click here</a>. If you are cutting and pasting from a non-text editor, such as MSWord, make sure you convert all symbols to LaTeX, and remove any extra newline characters (^M).<hr>
 <center>
   <form action ="submit4_test.php" method="post">
   <textarea name="abstract" cols=80 rows=30></textarea><br>
