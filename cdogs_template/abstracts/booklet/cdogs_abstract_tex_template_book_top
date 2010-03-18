@@ -21,10 +21,12 @@ pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS YYYY}
 
 \newcommand{\abTitle}[1]{\begin{center}\fontsize{12pt}{16pt}\textbf{#1}\end{center}}%
 %\newcommand{\abSpeaker}[2]{^{\mbox{#2}}\mbox{\underline{#1}}}%
-\newcommand{\abSpeaker}[2]{\mbox{\underline{#1}}^{\mbox{#2}}}%
+%\newcommand{\abSpeaker}[2]{\mbox{\underline{#1}}^{\mbox{#2}}}%
+\newcommand{\abSpeaker}[2]{{\underline{#1}}$^{\mbox{#2}}$}%
 
 %\newcommand{\abCoauthorO}[2]{\mbox{, }^{\mbox{#2}}\mbox{#1}}%
-\newcommand{\abCoauthorO}[2]{\mbox{, }\mbox{#1}^{\mbox{#2}}}%
+%\newcommand{\abCoauthorO}[2]{\mbox{, }\mbox{#1}^{\mbox{#2}}}%
+\newcommand{\abCoauthorO}[2]{, #1$^{\mbox{#2}}$}%
 \newcommand{\abCoauthorI}[2]{\mbox{, }\mbox{#1}^{\mbox{#2}}\mbox{,}}%
 \newcommand{\abCoauthorN}[2]{^{\mbox{#2}}\mbox{#1}}%
 \newcommand{\abCoauthorT}[4]{\textrm{\mbox{, }^{#4}\mbox{#1}\mbox{, }^{#4}\mbox{#3}}}%
