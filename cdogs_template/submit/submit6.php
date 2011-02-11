@@ -46,7 +46,7 @@
     fclose($handle);
 
 #send an email to inform about the submission.
-$today = date("M d, Y - H:i:s");
+$today = date("Y-m-d H:i:s");
 mail("clark.richards@phys.ocean.dal.ca", "New CDOGS Submission!!", "There is a new submission on the CDOGS website, submitted: $today.");
   ?>
 </div>
