@@ -1,0 +1,3 @@
+add unicode functionality (esp. with accents) | id:43bdab2968dbeb14a0cd668893f8ae8cc6ec7f5a
+add umlaut to tex2html | id:55b227f0b14a9dc1608b5b85b192c627c094a267
+fix tex2html (submitted.php) bug with acute accent | id:ba3edb08d9f3e6a9874a47396865cf2290d9b8d9

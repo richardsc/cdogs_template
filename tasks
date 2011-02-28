@@ -1,2 +1,3 @@
-add unicode functionality | id:43bdab2968dbeb14a0cd668893f8ae8cc6ec7f5a
+add unicode functionality (esp. with accents) | id:158b048995c03b27d2c2f6f0ab1929354a2533f9
 replace "" with `` | id:6e379d576b57e2c9b50495bfe86d64989919af19
+improve tex2html in submitted.php (better recognition of accents vs superscripts | id:a053c6d0a43acf9bdabf04df8269e57a94fa577c

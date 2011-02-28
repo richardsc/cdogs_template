@@ -177,9 +177,10 @@ $squig_close = preg_quote('}','/');
 
 $and = preg_quote('&','/');
 
-$s = preg_replace("/\\/{(.)}/", '$1acute;', $s);
+$s = preg_replace("/\\'{(.)}/", '$1acute;', $s);
 $s = preg_replace("/\\`{(.)}/", '$1grave;', $s);
 $s = preg_replace("/\\^{(.)}/", '$1circ;', $s);
+$s = preg_replace("/\\\"{(.)}/", '$1uml;', $s);
 $s = preg_replace("/c{(.)}/", '$1cedil;', $s);
 
 // * superscripts
