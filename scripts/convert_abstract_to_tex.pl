@@ -253,7 +253,7 @@ sub ind_abs {
   system "pdflatex -interaction batchmode " . $sub_dir . $fname;
   system 'rm '. $fname .'.aux';
   system 'rm '. $fname .'.log';
-  system 'chgrp dosa-web '. $sub_dir . $fname.'tex';
+  system 'chgrp dosa-web '. $sub_dir . $fname.'.tex';
   system 'chgrp dosa-web '. $sub_dir . $fname .'_abs_part.tex';
   system 'chgrp dosa-web '. $fname.'.pdf';
   system 'mv '. $fname .'.pdf ' . $abs_dir;
