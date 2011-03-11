@@ -1,0 +1,21 @@
+<abstract>
+  <title> The title for a talk</title>
+  <speaker>
+    <name> Jane Doe</name>
+    <affil_numbers> 1 </affil_numbers>
+    <email>
+      <address> jane.doe@dal.ca </address>
+      <post_web> yes </post_web>
+      <post_book> yes </post_book>
+    </email>
+  </speaker>
+  <coauthor>
+    <name> Coauthor Name</name>
+    <affil_numbers> 1 </affil_numbers>
+  </coauthor>
+  <affiliation>
+    <name> Department of Oceanography, Dalhousie University, Halifax, NS, B3H 4J1, Canada </name>
+    <affil_number> 1 </affil_number>
+  </affiliation>
+  <text> This is the abstract. It should be a good one. </text>
+</abstract>
