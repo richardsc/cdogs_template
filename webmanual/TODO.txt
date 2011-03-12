@@ -1,0 +1,23 @@
+Things to do for the cdogs website scripts:
+* change templates (tex, html, etc) so that the DATE only has to be
+updated in one place.
+* update submit scripts to be more clear about latex/msword codes, and
+to deal with middle names/initials.
+* create scripts to create booklet and website schedule from submitted abstracts and a
+"schedule" file.
+* Fix CDOGS logo (vecorize)
+* Fix latex help page (make texsym graphics local)
+* add \label to abstracts for booklet
+
+Schedule file:
+* Will need to be able to differentiate between SPEAKER rows, which
+will be associated with an abstract that must be included, and ITEM
+rows, which contain information like: Opening, Break, etc ....
+
+
+Files where date must be updated:
+* index.php
+* head.php
+* welcome.php
+* cdogs_abstract_tex_template_book_top
+* cdogs_abstract_tex_template_top 

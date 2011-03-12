@@ -1,0 +1,226 @@
+% Manual for the CDOGS website.
+%
+% Written by Clark Richards
+% 2009-03-29
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{anysize}
+\usepackage{lineno}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\usepackage{hyperref}
+
+\marginsize{1in}{1in}{0.5in}{0.5in}
+\title{C-DOGS Website Manual \\ A description of the myriad of pages,
+  scripts, and procedures for a headache-free conference}
+\author{Clark Richards}
+\date{\today}
+
+\begin{document}
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+The Conference of Dalhousie Oceanography Graduate Students (or C-DOGS,
+as it's come to be known), has existed since 2002 (?). Starting in
+2004, a website was created that allowed authors to submit their
+abstracts online, easy the job of the organizers by automating much of
+the submission process.
+
+The original version of the website and abstract submission scripts
+were written by Ramzi Mirshak, and were modified and maintained by him
+until 2006. Starting with C-DOGS 2007, Clark Richards took over
+maintenance and operation of the website from Ramzi, following a
+series of tutorials into the workings of the various scripts and
+pages.
+
+The reason for the creation of this manual is to make the system more
+portable, by elucidating the various components of the abstract
+submission system so that in the future it can continue to be
+maintained. The current version incorporates shell scripts, html, php,
+\LaTeX, and perl, all of which interact to produce the list of
+speakers and pdf abstracts that you can see on the
+website\footnote{\url{www.phys.ocean.dal.ca/dosa/cdogs/}}.
+
+In addition, changes have been made following C-DOGS 2009 to make the
+process easier on the maintainer, including:
+\begin{itemize}
+\item adding increased clarity and handling for the submission scripts
+  (i.e. recognition of strange characters and more warnings about
+  cutting and pasting from MSWord documents)
+\item allowing the schedule webpages to be generated automatically, and
+\item and allowing the proceedings booklet to be generated
+  automatically using the determined schedule and the submitted
+  abstracts.
+\end{itemize}
+In the past this step has been very tedious, as it must be done by
+cutting and pasting, and the subtle nuances of making the final
+version are often forgotten from one year to the next.
+
+The ideal solution to the online submission and booklet/webpage
+creation process would be to use a database enable site, for example
+SQLite. This would require a significant time commitment to code and
+setup, and so I leave this for someone who has more experience in it
+than I do.
+
+\section{General Description of Process}
+
+The cdogs website files are located in a subdirectory of the dosa web
+directory, hosted on the phys.ocean.dal.ca known as passage. The
+directory can be found at: /var/www/html/skye/dosa/. Of course, the
+user must have the correct privileges to edit pages (group dosa-web?),
+which can be sorted out with the phys.ocean system administrator.
+
+The C-DOGS directories are contained in the dosa web directory, and each
+year has been archived. The cdogs link must be updated to point to the
+most recent directory so that the webpage functions without an
+explicit year.
+
+When it is time to get the website ready for the conference, the first
+steps are to update the INFO files, and the welcome.php and list.php
+portions of the main site. These procedures are outlined further in
+Section \ref{s:initial}.
+
+Following this, once the online submission has opened, the authors
+submit abstracts using the online forms described in \ref{s:abs}. The
+current incarnation of the website stores the submitted abstracts as a
+plain text file with xml-like fields in a hidden directory called
+``\verb|$CDOGS/.submissions/|". The maintainer then manually runs the
+scripts (located in \verb|$CDOGS/scripts/|) which parse all \verb|.txt| files
+in the submissions directory to create \verb|.tex| files for both the
+entire abstract on its own, and an abstract part to be used in the
+creation of the conference booklet. Another script updates the
+speaker list for submitted abstracts on the webpage. A final script
+creates a plain text file of all the email addresses of presenters to
+facilitate group emailing.
+
+Once all abstracts have been submitted, the schedule can be decided by
+the CDOGS committee. The schedule (including breaks and other
+scheduled items such as opening and closing remarks) is then entered
+into a text file manually, using a specific format that can be parsed
+by the necessary schedule script. Running this script creates a
+\verb|schedule.php| file for the website. The schedule file is also
+used for the creation of the abstract booklet, so that the table of
+contents and all of the abstracts are listed in the correct order. 
+
+\section{Initial Steps}\label{s:initial}
+
+\begin{itemize}
+\item Copy the template over to passage. This is most easily done by:
+  \begin{itemize}
+  \item clone the public Git repo at: 
+    \url{https://github.com/richardsc/cdogs_template} to \verb|/var/www/html/skye/dosa/|
+  \item rename the directory:
+\begin{verbatim}
+  $ mv cdogs_template cdogsYYYY
+\end{verbatim}
+    where YYYY is the year
+  \item delete the Git history from the clone:
+\begin{verbatim}
+  $ rm -rf cdogsYYYY/.git
+\end{verbatim}
+  \item update the symlink:
+\begin{verbatim}
+  $ rm cdogs
+  $ ln -s cdogsYYYY cdogs
+\end{verbatim}
+  \item change the group permissions to \verb|dosaweb|:
+\begin{verbatim}
+  $ chgrp -R dosa-web cdogsYYYY
+\end{verbatim}
+  \end{itemize}
+\item change dates (and location where applicable) in all relevant files
+  \vspace{-1em}
+\begin{verbatim}
+  $CDOGS/index.php
+  $CDOGS/head.php
+  $CDOGS/welcome.php
+  $CDOGS/scripts/cdogs_abstract_tex_template_book_top
+  $CDOGS/scripts/cdogs_abstract_tex_template_top
+  $CDOGS/abstracts/submitted.php
+\end{verbatim}
+\item Set counter to abstract opening in \verb|submit.html|
+\item Make sure relevant logos (and links) are displayed in the
+  sidebar (\verb|list.php|)
+\item Add a link to the abstract booklet from the previous year, e.g.:
+  \begin{itemize}
+  \item copy the file
+    \verb|dosa/cdogsYYYY/abstract/booklet/cdogsYYYY_abstracts.pdf| to
+    \verb|dosa/content/publications/|
+  \item create a link to that item following the existing ones already
+    in the sidebar
+  \end{itemize}
+\item CDOGS links in sidebar prior to Abstract submission opening
+  should be: 
+  \begin{itemize}
+  \item Welcome (welcome.php), and
+  \item Submit Abstract (submit.html). Note that submit.html doesn't
+    go to the proper submit page (submit/submit1.php), but to a
+    javascript counter that counts down to the opening of abstract
+    submissions.
+  \item Sponsors (and logos)
+  \item Previous conference booklets
+  \end{itemize}
+
+
+\end{itemize}
+
+
+\section{Abstract Submission}\label{s:abs}
+
+Steps to open Abstract submission:
+\begin{itemize}
+\item Update sidebar with proper Submit Abstract link (comment out the
+  countdown one and uncomment the one that points to
+  \verb|$CDOGS/submit/submit1.php|.
+\item Update email address for Apache submission notifications, in
+  \verb|$CDOGS/submit/submit6.php|.
+\item Verify that the permissions of \verb|$CDOGS/.submissions| are \verb|drwxrwxrwx| or 777.
+\item Wait for the submissions to roll in.
+\item Periodically login to Passage, and run the abstract scripts in
+  \verb|$CDOGS/scripts/| to process the submissions. It can be a good
+  idea to try to run them after each submission, in case there are
+  problems with the submitted abstract (see next section). Future
+  versions will run the script automatically, either based on a cron
+  job at regular intervals, or in response to the completed
+  submission.
+\item The scripts to run are:
+\begin{verbatim}
+./convert_abstract_to_tex.pl
+./update_speakerlist.pl
+\end{verbatim}
+  The first creates the pdf of the submitted abstract using \LaTeX\
+  (located in \verb|$CDOGS/abstracts/|), while the second updates the
+  file \verb|$CDOGS/abstracts/speaker_list.html|.
+\end{itemize}
+
+
+\subsection{Common problems with abstract submission}
+
+\begin{itemize}
+\item Names with middle initial, or more than just first and last
+  name. THIS WILL BE FIXED.
+\item Abstracts cut and paste from a non-text editing program, like
+  MSWord. This can create several different problems:
+  \begin{itemize}
+  \item Abstract text with non-latex symbols in it. The most common
+    are: percent (e.g. $\%$) without the slash, degrees
+    (e.g. $^{\circ}$), accents, italics (species names, etc), units,
+    super/subscripts, etc.
+  \item Funny placement of carriage return characters (e.g. \verb|^M|)
+  \end{itemize}
+
+\end{itemize}
+
+\section{Schedule Creation}
+
+\section{Booklet Creation}
+
+\end{document}
+
