@@ -1,4 +1,8 @@
 add unicode functionality (esp. with accents) | id:158b048995c03b27d2c2f6f0ab1929354a2533f9
+degree sign html recognition | id:36f1d08d3a49ad1795e4e3571987f9d421c0b382
+***BUG*** fix script that uses template_top to remove $$ from the affil addresses | id:3d5566b20923ff000972f70f591d0deda800d9f8
+***BUG*** fix top template | id:517d033d06cd88569c2894e24c7c15e18937ac98
+accent grave html recognition | id:52865acb38142b565463b920091917ede8d04a6d
 replace "" with `` | id:6e379d576b57e2c9b50495bfe86d64989919af19
 clean up permissions problems when multiple users | id:9c9a051747572ce71d63f05de1fd3562d68f3358
 improve tex2html in submitted.php (better recognition of accents vs superscripts | id:a053c6d0a43acf9bdabf04df8269e57a94fa577c
