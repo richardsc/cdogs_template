@@ -238,7 +238,45 @@ The four files needed to create the booklet are:
 \item \verb|$CDOGS/scripts/booklet_abs_part.tex|
 \end{itemize}
 
-Once all the abstracts
+Once all the abstracts have all been submitted,
+\verb|convert_abstract_to_tex.pl| has been run on everything (without
+errors), and the schedule has been determined, the proceedings booklet
+can be created.
+
+The manual steps required to prepare the files for the booklet are:
+\begin{itemize}
+\item copy \verb|$CDOGS/scripts/booklet_sched_part.tex| and
+  \verb|$CDOGS/scripts/booklet_abs_part.tex| to
+  \verb|$CDOGS/abstracts/booklet/|
+\item edit \verb|booklet_sched_part.tex| to fill in the correct
+  schedule order and times. Leave the \verb|page| field unchanged for
+  now
+\item re-order the items in \verb|booklet_abs_part.tex| to match the
+  correct order in the schedule.
+\item insert \verb|\newpage| commands where appropriate so that an
+  abstract doesn't span two pages. This step may require \LaTeX ing
+  the document several times to make sure it looks ok.
+\item record the page numbers for each abstract, and then edit
+  \verb|booklet_sched_part.tex| to enter the appropriate page numbers
+  for each talk.
+\end{itemize}
+
+The final \LaTeX\ document to create the booklet is then the result of
+concatenating the four files listed above, in the following order:
+\begin{itemize}
+\item \verb|$CDOGS/abstracts/booklet/cdogs_abstract_tex_template_book_top|
+\item \verb|$CDOGS/scripts/booklet_sched_part.tex|
+\item \verb|$CDOGS/scripts/booklet_abs_part.tex|
+\item \verb|$CDOGS/abstracts/booklet/cdogs_abstract_tex_template_book_bottom|
+\end{itemize}
+and running \LaTeX\ to produce a pdf. If necessary, run \LaTeX\ in
+nonstopmode, i.e.:
+\begin{verbatim}
+$ cat cdogs_abstract_tex_template_book_top booklet_sched_part.tex
+booklet_abs_part.tex cdogs_abstract_tex_template_book_bottom >
+cdogsYYYY_abstracts.tex
+$ pdflatex -interaction=nonstopmode cdogsYYYY_abstracts.tex
+\end{verbatim}
 
 \end{document}
 

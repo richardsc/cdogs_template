@@ -6,3 +6,4 @@ accent grave html recognition | id:52865acb38142b565463b920091917ede8d04a6d
 replace "" with `` | id:6e379d576b57e2c9b50495bfe86d64989919af19
 clean up permissions problems when multiple users | id:9c9a051747572ce71d63f05de1fd3562d68f3358
 improve tex2html in submitted.php (better recognition of accents vs superscripts | id:a053c6d0a43acf9bdabf04df8269e57a94fa577c
+** make booklet_abs_part.tex have the minipage abs_parts | id:bebafd4cd962ae8a3014bed91e9d5b194e494478
