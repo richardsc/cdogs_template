@@ -141,8 +141,10 @@ contents and all of the abstracts are listed in the correct order.
   $CDOGS/index.php
   $CDOGS/head.php
   $CDOGS/welcome.php
-  $CDOGS/scripts/cdogs_abstract_tex_template_book_top
   $CDOGS/scripts/cdogs_abstract_tex_template_top
+  $CDOGS/scripts/cdogs_abstract_tex_template_bottom
+  $CDOGS/abstracts/booklet/cdogs_abstract_tex_template_book_top
+  $CDOGS/abstracts/booklet/cdogs_abstract_tex_template_book_bottom
   $CDOGS/abstracts/submitted.php
 \end{verbatim}
 \item Set counter to abstract opening in \verb|submit.html|
@@ -228,13 +230,12 @@ script. This is currently a mostly manual process, and involves some
 cutting in pasting in the correct order, with manual update of page
 numbers at the end. The steps involved will be detailed here.
 
-The four files needed to create the booklet are located in
-\verb|$CDOGS/scripts|, and are:
+The four files needed to create the booklet are:
 \begin{itemize}
-\item \verb|cdogs_abstract_tex_template_book_top|
-\item \verb|cdogs_abstract_tex_template_book_bottom|
-\item \verb|booklet_sched_part.tex|
-\item \verb|booklet_abs_part.tex|
+\item \verb|$CDOGS/abstracts/booklet/cdogs_abstract_tex_template_book_top|
+\item \verb|$CDOGS/abstracts/booklet/cdogs_abstract_tex_template_book_bottom|
+\item \verb|$CDOGS/scripts/booklet_sched_part.tex|
+\item \verb|$CDOGS/scripts/booklet_abs_part.tex|
 \end{itemize}
 
 

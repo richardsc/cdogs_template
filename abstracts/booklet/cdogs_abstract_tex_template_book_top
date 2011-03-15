@@ -73,11 +73,11 @@ Graduate Students}}
 
 \begin{flushright}Page\end{flushright}
 
-\contentsline{section}{\numberline{} \rm \textsl{title} \\
-Author\hspace{3 mm}(9:40\emph{am})}{3}%
-\vspace{2 mm}
+% \contentsline{section}{\numberline{} \rm \textsl{title} \\
+% Author\hspace{3 mm}(9:40\emph{am})}{3}%
+% \vspace{2 mm}
 
-\newpage
+% \newpage
 %-----------------------------------------------------------------------------------
 
 %-----------------------------------------------------------------------------------
