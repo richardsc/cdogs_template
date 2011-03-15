@@ -34,7 +34,7 @@ pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS YYYY}
 \newcommand{\abCoauthorF}[8]{\textrm{\mbox{, }^{#2}\mbox{#1}\mbox{, }^{#4}\mbox{#3}\mbox{, }^{#6}\mbox{#5}\
 \mbox{, }^{#8}\mbox{#7}}}%
 
-\newcommand{\abAffilO}[2]{\centering{$^{\mbox{#2}}${#1}}
+\newcommand{\abAffilO}[2]{\centering{$^{\mbox{#2}}${#1}}}
 %\newcommand{\abAffilO}[2]{^{\mbox{#2}}\mbox{\parbox[t]{0.9\linewidth}{\centering #1}}}%
 
 \newcommand{\abEmail}[1]{\textsl{Speaker may be reached at }\texttt{#1}}
@@ -44,7 +44,7 @@ pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS YYYY}
 \begin{document}
 \thispagestyle{empty}
 %\begin{figure}
-%\centerline{\includegraphics[width=10 cm]{cdogs_logo.jpg}}
+%\centerline{\includegraphics[width=10 cm]{cdogs_logo.pdf}}
 %\end{figure}
 
 \begin{center}\vspace{3 mm}{\Huge\textbf{C-DOGS YYYY}}

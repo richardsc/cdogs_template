@@ -330,11 +330,12 @@ sub booklet{
       @abs_foo = split(' </title>',$abs_foo[1]);
       $abs_title = $abs_foo[0];
 
-      print SCHEDOUT '\sched{' . $abs_speak . '}{' . $abs_title .'}{00:00 \emph{am}}{page}'."\n";
+      print SCHEDOUT '\sched{' . $abs_speak . '}{' . $abs_title .'}{00:00}{page}'."\n";
 
       ++$i;
 
   }
+  print SCHEDOUT '\newpage'
   close(BOOKOUT);
   close(SCHEDOUT);
   

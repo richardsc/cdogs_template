@@ -5,10 +5,10 @@
 \fi 
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{fancyheadings}
+\usepackage{fancyhdr}
  \pagestyle{fancyplain}
-\setlength{\headrulewidth}{0.3 pt} \setlength{\footrulewidth}{0.3
-pt} \setlength{\headwidth}{6 in} \lhead{\textbf C-DOGS YYYY}
+\renewcommand{\headrulewidth}{0.3 pt} \renewcommand{\footrulewidth}{0.3
+pt} \renewcommand{\headwidth}{6 in} \lhead{\textbf C-DOGS YYYY}
 \chead{} \rhead{\textbf DAY, MONTH DD, YYYY} \lfoot{}
 \cfoot{Department of Oceanography, Dalhousie University}
 \rfoot{\thepage}
