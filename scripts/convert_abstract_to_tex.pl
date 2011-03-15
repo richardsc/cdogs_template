@@ -335,7 +335,7 @@ sub booklet{
       ++$i;
 
   }
-  print SCHEDOUT '\newpage'
+  print SCHEDOUT '\newpage';
   close(BOOKOUT);
   close(SCHEDOUT);
   
