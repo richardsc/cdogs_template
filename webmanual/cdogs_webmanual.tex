@@ -13,17 +13,15 @@
 \usepackage{hyperref}
 
 \marginsize{1in}{1in}{0.5in}{0.5in}
-\title{C-DOGS Website Manual \\ A description of the myriad of pages,
-  scripts, and procedures for a headache-free conference}
+\title{C-DOGS Website Manual \\ A description of the pages, scripts,
+  and procedures for a headache-free conference}
 \author{Clark Richards}
 \date{\today}
 
 \begin{document}
 \maketitle
-\newpage
 
 \tableofcontents
-\newpage
 
 \section{Introduction}
 
@@ -115,7 +113,10 @@ contents and all of the abstracts are listed in the correct order.
 \item Copy the template over to passage. This is most easily done by:
   \begin{itemize}
   \item clone the public Git repo at: 
-    \url{https://github.com/richardsc/cdogs_template} to \verb|/var/www/html/skye/dosa/|
+    \url{https://github.com/richardsc/cdogs_template} to
+    \verb|/var/www/html/skye/dosa/|, or
+  \item download the source as a
+    \verb|.zip| or \verb|.tar.gz| file from the github page.
   \item rename the directory:
 \begin{verbatim}
   $ mv cdogs_template cdogsYYYY
@@ -207,7 +208,7 @@ Steps to open Abstract submission:
 
 \begin{itemize}
 \item Names with middle initial, or more than just first and last
-  name. THIS WILL BE FIXED.
+  name.
 \item Abstracts cut and paste from a non-text editing program, like
   MSWord. This can create several different problems:
   \begin{itemize}
@@ -216,6 +217,12 @@ Steps to open Abstract submission:
     (e.g. $^{\circ}$), accents, italics (species names, etc), units,
     super/subscripts, etc.
   \item Funny placement of carriage return characters (e.g. \verb|^M|)
+  \item Names that have unicode accents in them will generally render
+    fine in html, but not in \LaTeX. The best solution is to edit the
+    \verb|.txt| file and correct the unicode character to the proper
+    \LaTeX\ version. This won't affect rendering for the website
+    (because of the tex2html conversion in
+    \verb|$CDOGS/abstracts/submitted.php|).
   \end{itemize}
 
 \end{itemize}
@@ -256,12 +263,20 @@ The manual steps required to prepare the files for the booklet are:
 \item insert \verb|\newpage| commands where appropriate so that an
   abstract doesn't span two pages. This step may require \LaTeX ing
   the document several times to make sure it looks ok.
-\item record the page numbers for each abstract, and then edit
+\item In addition, where two abstracts are on the same page, a
+  separator should be used between them. The separator code is:
+\begin{verbatim}
+%-----------------------------------------------------------------
+\vspace{5 mm} \begin{center}\rule{0.9\linewidth}{1pt}\end{center}
+%-----------------------------------------------------------------
+\end{verbatim}
+\item Once the layout of the booklet looks good, record the page
+  numbers for each abstract, and then edit
   \verb|booklet_sched_part.tex| to enter the appropriate page numbers
   for each talk.
 \end{itemize}
 
-The final \LaTeX\ document to create the booklet is then the result of
+The final \verb|.tex| document to create the booklet is then the result of
 concatenating the four files listed above, in the following order:
 \begin{itemize}
 \item \verb|$CDOGS/abstracts/booklet/cdogs_abstract_tex_template_book_top|
@@ -269,8 +284,7 @@ concatenating the four files listed above, in the following order:
 \item \verb|$CDOGS/scripts/booklet_abs_part.tex|
 \item \verb|$CDOGS/abstracts/booklet/cdogs_abstract_tex_template_book_bottom|
 \end{itemize}
-and running \LaTeX\ to produce a pdf. If necessary, run \LaTeX\ in
-nonstopmode, i.e.:
+and running \LaTeX\ to produce a pdf, e.g.:
 \begin{verbatim}
 $ cat cdogs_abstract_tex_template_book_top booklet_sched_part.tex
 booklet_abs_part.tex cdogs_abstract_tex_template_book_bottom >
